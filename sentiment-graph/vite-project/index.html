@@ -1,0 +1,44 @@
+<body>
+ 
+<div id="tooltip" style="
+  position: absolute;
+  pointer-events: none;
+  background: purple;
+  color: white;
+  padding: 20px;
+  font-size: 30px;  /* 5x larger than 12px */
+  border-radius: 10px;
+  display: none;
+  z-index: 10;
+  max-width: 800px;
+  line-height: 1.4;
+  font-family: sans-serif;
+  max-width: 80vw;
+word-wrap: break-word;
+
+"></div>
+
+  <div id="legend" style="
+  position: absolute; top: 160px; left: 20px; color: white; background: rgba(0,0,0,0.7); padding: 10px; font-family: sans-serif;">
+  <strong>Sentiment Legend</strong><br/>
+  <span style="color:#00ff00">🟢 Positive</span><br/>
+  <span style="color:#ffffff">⚪ Neutral</span><br/>
+  <span style="color:#ff0000">🔴 Negative</span>
+</div>
+
+<div id="tooltip" style="
+  position: absolute;
+  pointer-events: none;
+  background: rgba(0,0,0,0.7);
+  color: white;
+  padding: 10px;
+  font-size: 12px;
+  border-radius: 5px;
+  display: none;
+  z-index: 10;
+  max-width: 300px;
+  line-height: 1.4;
+"></div>
+
+  <script type="module" src="/src/main.js"></script>
+</body>
