@@ -29,6 +29,12 @@ const controls = new OrbitControls(camera, renderer.domElement);
 controls.enableDamping = true;
 
 window.addEventListener('click', onClick, false);
+window.addEventListener('touchstart', (e) => {
+  if (e.touches.length > 0) {
+    onClick(e.touches[0]);
+  }
+}, false);
+
 
 scene.background = new THREE.Color(0x284E71);
 
@@ -159,42 +165,6 @@ if (intersects.length > 0) {
  }
 
 
-//  function showTooltip(x, y, data) {
-//   const tooltip = document.getElementById('tooltip');
-//   const localDate = new Date(data.date).toLocaleString();
-  
-//   let sentimentLabel = 'Neutral';
-//   if (data.sentiment > 0.2) sentimentLabel = 'Positive';
-//   else if (data.sentiment < -0.2) sentimentLabel = 'Negative';
-
-//   tooltip.innerHTML = `
-//     <strong>${sentimentLabel}</strong><br/>
-//     <em>${localDate}</em><br/>
-//     ${data.text}
-//   `;
-  
-//   // Show it briefly to measure its size
-//   tooltip.style.display = 'block';
-//   tooltip.style.left = '0px';
-//   tooltip.style.top = '0px';
-  
-//   const tooltipRect = tooltip.getBoundingClientRect();
-//   const padding = 20;
-
-//   let left = x + 15;
-//   let top = y + 15;
-
-//   if (left + tooltipRect.width > window.innerWidth - padding) {
-//     left = window.innerWidth - tooltipRect.width - padding;
-//   }
-
-//   if (top + tooltipRect.height > window.innerHeight - padding) {
-//     top = window.innerHeight - tooltipRect.height - padding;
-//   }
-
-//   tooltip.style.left = `${left}px`;
-//   tooltip.style.top = `${top}px`;
-// }
 
 function showTooltip(x, y, data) {
   const tooltip = document.getElementById('tooltip');
