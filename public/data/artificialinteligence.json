@@ -1,0 +1,502 @@
+[
+  {
+    "id":"1lk5v83",
+    "title":"Anthropic just won its federal court case on its use of 7 million copyrighted books as training material - WTH?",
+    "text":"**What happened:**\n\n* Anthropic got sued by authors for training Claude on copyrighted books without permission\n* Judge Alsup ruled it's \"exceedingly transformative\" = fair use\n* Anthropic has 7+ million pirated books in their training library\n* Potential damages: $150k per work (over $1T total) but judge basically ignored this\n\n**Why this is different from Google Books:**\n\n* Google Books showed snippets, helped you discover\/buy the actual book\n* Claude generates competing content using what it learned from your work\n* Google pointed to originals; Claude replaces them\n\n**The legal problems:**\n\n* Fair use analysis requires 4 factors - market harm is supposedly the most important\n* When AI trained on your book writes competing books, that's obvious market harm\n* Derivative works protection (17 U.S.C. \u00a7 106(2)) should apply here but judge hand-waved it\n* Judge's \"like any reader aspiring to be a writer\" comparison ignores that humans don't have perfect recall of millions of works\n\n**What could go wrong:**\n\n* Sets precedent that \"training\" = automatic fair use regardless of scale\n* Disney\/Universal already suing Midjourney - if this holds, visual artists are next\n* Music, journalism, every creative field becomes free training data\n* Delaware court got it right in Thomson Reuters v. ROSS - when AI creates competing product using your data, that's infringement\n\nI'm unwell. So do I misunderstand? The court just ruled that if you steal enough copyrighted material and process it through AI, theft becomes innovation. How does this not gut the entire economic foundation that supports creative work?",
+    "created_utc":1750858566.0,
+    "subreddit":"ArtificialInteligence",
+    "num_comments":567,
+    "score":884,
+    "sentiment":-0.8912
+  },
+  {
+    "id":"1m0gpje",
+    "title":"What new jobs will AI actually create?",
+    "text":"\n\n   I have often seen people respond to my previous post claiming AI will create more jobs. So basically what jobs will it create?\n\nI don\u2019t want to hear that it helps you cook new recipes or helps you with trivia questions.  Because these aren\u2019t jobs\n\nI\u2019m asking what sort of new jobs will AI enable.  Because I have hard time seeing a clear path.\n\nAs LLMs and AI because better it would be very difficult for people to build businesses around AI.  People say that you can create an AI wrapper that is more task focused.  Ok how long before you\u2019re undercut by the LLM provider?\n\nThe issue is that in the world of AI, people can become middle men.  Basically a broker between the user and the AI.  But as AI improves that relationship becomes less and less valuable.  Essentially it\u2019s only a condition of early AI where these are really businesses.  But they will all eventually be undercut.\n\n\nWe know with the Industrial Revolution that it eventually created more jobs.  The internet did as well.  \n\nBut here is the thing.  Simpler things were replaced by more complex things and a skill set was needed.  Yes computers made jobs easier but you needed actual computer skills.  So there was value in understanding something more complex.  \n\nThis isn\u2019t the case with AI.  You don\u2019t need to understand anything about AI to use it effectively.  So as I said in my only post . The only new skill is being able to create your own models, to build your own AI.  But you won\u2019t be able to do this because it\u2019s a closed system and absurdly expensive.\n\nSo it concentrate the job creation in opportunity into the hands of the very small amount of people with AI specialization.  These require significant education at a pHD level and lots of math.  Something that won\u2019t enable the average person.\n\nSo AI by its very nature is gatekeeping at a market and value level.  Yes you can use AI to do task.  But these are personal task, these are not things you build a business around.   This is sooo important to emphasize\n\nI can\u2019t see where anyone but AI Engineers and Data Scientist won\u2019t be the only ones employable in the foreseeable future.  Again anything not AI related will have its skill gap erased by AI. The skill is AI but unless you have a PhD you won\u2019t be able to even get a job in it even if you did have the requisite knowledge.\n\n\n",
+    "created_utc":1752583206.0,
+    "subreddit":"ArtificialInteligence",
+    "num_comments":430,
+    "score":203,
+    "sentiment":0.9946
+  },
+  {
+    "id":"1lfy512",
+    "title":"The human brain can imagine, think, and compute amazingly well, and only consumes 500 calories a day. Why are we convinced that AI requires vast amounts of energy and increasingly expensive datacenter usage?",
+    "text":"Why is the assumption that today and in the future we will need ridiculous amounts of energy expenditure to power very expensive hardware and datacenters costing billions of dollars, when we know that a human brain is capable of actual general intelligence at very small energy costs? Isn't the human brain an obvious real life example that our current approach to artificial intelligence is not anywhere close to being optimized and efficient? ",
+    "created_utc":1750405430.0,
+    "subreddit":"ArtificialInteligence",
+    "num_comments":348,
+    "score":370,
+    "sentiment":0.9695
+  },
+  {
+    "id":"1lo1juj",
+    "title":"Can we stop pretending that goals of companies like OpenAI are beneficial to the humanity and finally acknowledge that it's all just a massive cash grab?",
+    "text":"I keep hearing the same stuff over and over again - AI is here to cure cancer, it's here to solve climate crisis and all the big problems that we are too small to solve.\n\nIt's the same BS as Putin was giving us when he invaded the Ukraine \"I only want to protect poor russian minorities\", while his only goal was a land grab conquest war to get his hands on those mineral rich parts of Ukraine.\n\nIt's the same with the AI industry - those companies keep telling us how they are non-profit, for-humanity, companies that only want to help us elevate quality of life, solve all the big problems humanity is facing while taking no profit because in the future money will be irrelevant anyway right, in that \"post-scarcity future\" that they are sure going to deliver.\n\nThe reality is that this entire industry is revolving around money - getting filthy rich as soon as possible, while disregarding any safety or negative impacts AI might have on us. For years the OpenAI was trying to figure out how to solve various problems in a slow and safe manner, experimenting with many different AI projects in their research and development division. They had huge safety teams that wanted to ensure responsible development without negative effects on humanity.\n\nThen they ran into one somewhat successful thing - scaling the shit out of LLMs, making huge LLM models and feeding them as big datasets as possible that yielded something that could be monetized by the big corporations and since then entire company is just revolving around that, they even dismantled the safety teams because they were slowing them down.\n\nAnd the reason why this technology is so popular and so massively supported by those big corporations is that they can see huge potential in using it to replace human workforce with, not to cure cancer or fix the climate, but to save on human labor and increase profits.\n\nThey killed all the research in other directions and dismantled most of the safety teams, stopped all public research, made everything confidential and secret and they put all the focus on this thing only, because it just makes most money. And nobody cares that it's literally ruining life of millions of people who had a decent job before and in the future it's likely going to ruin the life of billions. It's all good as long as it's going to make them trillionaires.\n\nGood luck buying that \"cheap drug\" to heal cancer made by AI which only cost $1000 when you live on the street under cartons because AI killed all jobs available to humans.",
+    "created_utc":1751269302.0,
+    "subreddit":"ArtificialInteligence",
+    "num_comments":335,
+    "score":815,
+    "sentiment":0.9442
+  },
+  {
+    "id":"1lz8jvr",
+    "title":"The AI Layoff Tsunami Is Coming for Red America",
+    "text":"[https:\/\/theherocall.substack.com\/p\/the-ai-layoff-tsunami-is-coming-for](https:\/\/theherocall.substack.com\/p\/the-ai-layoff-tsunami-is-coming-for)\n\nFor conservatives, the coming wave of AI-driven job displacement poses a deeper ideological crisis than most are ready to admit. It threatens not just workers, but the moral framework of the American right: the belief that work confers dignity, self-reliance sustains liberty, and markets reward effort.\u00a0**But what happens when the labor market simply doesn\u2019t need the labor?**\n\nWhen AI systems can drive, code, file taxes, diagnose illness, write contracts, tutor students, and handle customer service, all at once, faster, and cheaper than humans, what exactly is the plan for the tens of millions of displaced workers, many of whom vote red?\u00a0**How does a society that ties basic survival to employment absorb 30, 40, or even 50 million people who are not lazy or unmotivated, but simply rendered economically irrelevant?**\n\nThis is where conservatives face a historic crossroads.\u00a0**Either they cling to a fading vision of self-sufficiency and let economic obsolescence metastasize into populist rage, or they evolve, painfully, and pragmatically, toward a new social contract.**\u00a0One that admits: if markets can no longer pay everyone for their time, then society must pay people simply for being citizens. Not as charity, but as compensation for being shut out of the machine they helped build.",
+    "created_utc":1752453338.0,
+    "subreddit":"ArtificialInteligence",
+    "num_comments":329,
+    "score":951,
+    "sentiment":0.4929
+  },
+  {
+    "id":"1lz3hi2",
+    "title":"Underappreciated hard truth about AI \"intelligence\" and \"emergent behavior\"",
+    "text":"tldr; there is no evidence to support AI will ever achieve superintelligence or even surpass human intelligence in most respects.\n\nFor the record, it's literally part of my job for a large tech company to research and understand where AI is going and what it is useful for.  These days, people both in the AI\/tech industry and from outside are either incredibly excited for or very scared of how AI threatens humans place in the world.  People even talk about AI achieving \"superintelligence\", or surpassing human's cognitive abilities.  To be fair, there are naysayers on the other side that only ever say AI is useless, and these are obviously wrong as well.\n\nGetting to the point, AI cannot think and AI does not do anything that really resembles problem solving.  While I know people dislike what I'm going to say, it's true that LLMs are **statistical word prediction models and nothing more.**  No where in that description is there anything about intelligence or thought.  Now, the important caveat is that these statistical models are ***very good at what they were designed to do.***  This ability of LLMs to process natural language to respond to queries and even carry out tasks using software tools (ie, AI agents) is really very amazing!  Again, naysayers often dismiss how remarkable it is that LLMs have the abilities they've so far demonstrated.  I wholly agree with the assessment that this technology will transform many, many industries and job roles, and potentially will obviate the need for some roles (a whole other topic).\n\nWith all that said, the natural question is this: where is AI heading?  Will it be getting smarter? Will the abilities of LLMs continue to expand at the rate we have seen in the last 2-3 years?  The answer is: **maybe, but there is so far very little evidence to suggest that.**  I'm happy to be proven wrong, and if anyone can point out an instance of an application of LLMs that show that they are going far beyond their training data in some domain, I'd love to see it.  But as of now, I've not seen it.  Remember, these are **language models.**  They don't have any special insight into topics like science, physics, biology, finance, politics, or art.  They have thus far not demonstrated any ability to contribute novel ideas or techniques to any of these fields, or to even do particularly complex tasks.  And the explanation for why is that this is **never what they were designed to do.**  They were designed to learn from their training data, and do use that to answer questions about that same data set.\n\nI want to close by addressing the number one most annoying phrase I hear when people overenthusiastically extrapolate the future abilities of AI: **emergent behavior.**  Again, if we recall that LLMs are basically complex statistical models, it should still be very mind-blowing that they are able to do anything at all, like mimic speech and respond to complex prompts.  The \"emergent behavior\" is that the \"black box\" of model weights result in incredibly convincing text generation capabilities.  But just because we have an amazing model which can perform well on language tasks A, B and C, does not mean we can arbitrarily say it will be able to do entirely unrelated tasks X, Y and Z.  Just because you have observed some impressive emergent behavior, doesn't mean you get to assume some entirely different behavior must therefore also arrive.\n\nOne last note: everything I've talked about with regard to AI is specific to LLMs.  If we really do eventually create an AI which surpasses humans, it will almost certainly be an entirely different technology\/model, which granted, may be getting here sooner, now that we have seen what LLMs are capable of.  But again, we can't act like we know when, how, or if that will even happen.\n\nI understand I'm taking maybe a hard stance, but I really look forward to discussing this with people who agree or disagree.  I totally accept I could be wrong about several things here, and welcome any critiques.\n\nEdit 1:\n\nI want to address a common response I'm seeing which basically tries to say \"***isn't human thinking basically word prediction\"?  And the answer is resoundingly no.  Talk to any neuroscientist and they will tell you that while it's clear neural*** networks are *inspired* by the human brain, the actual behavior\/implementations are vastly different, partially because we don't fully even understand how the human brain works.  Here's a [video ](https:\/\/www.youtube.com\/watch?v=-ovM0daP6bw&ab_channel=IBMTechnology)from a company that literally wants to sell you AI products explaining key differences.  One of the biggest differences is that ***humans don't have to think in words (tokens)!*** So no we are certainly not word prediction engines.\n\nSecondly, if you're just finding this thread please check out many of the cool and compelling counterarguments people have brought forward (esp those with real world examples.)  People have indeed brought forward interesting examples of LLMs achieving impressive levels of problem solving.  However, there is a key distinction to consider if we're trying to determine if LLMs could replace humans in the workplace.  In places where AI was used to solve a problem, was this someone taking ChatGPT off the shelf and asking it to solve a problem, or was it a specific tool made for a specific problem?  Many examples are the latter, and I think it's safe to say that if you need to make an entirely novel tool to solve a specific task, that doesn't really sound like your favorite chatbot taking your job any time soon.  Still, these examples are worth keeping tabs on.",
+    "created_utc":1752439763.0,
+    "subreddit":"ArtificialInteligence",
+    "num_comments":323,
+    "score":75,
+    "sentiment":0.998
+  },
+  {
+    "id":"1lsxtk0",
+    "title":"What is the real explanation behind 15,000 layoffs at Microsoft?",
+    "text":"I need help understanding this article on Inc.\n\n[https:\/\/www.inc.com\/jason-aten\/microsofts-xbox-ceo-just-explained-why-the-company-is-laying-off-9000-people-its-not-great\/91209841](https:\/\/www.inc.com\/jason-aten\/microsofts-xbox-ceo-just-explained-why-the-company-is-laying-off-9000-people-its-not-great\/91209841)\n\nBetween May and now Microsoft laid off 15,000 employees, stating, mainly, that the focus now is on AI. Some skeptics I\u2019ve been talking to are telling me that this is just an excuse, that the layoffs are simply Microsoft hiding other reasons behind \u201cAI First\u201d. Can this be true? Can Microsoft be, say, having revenue\/financial problems and is trying to disguise those behind the \u201cAI First\u201d discourse?\n\nAre they outsourcing heavily? Or is it true that AI is taking over those 15,000 jobs? The Xbox business must demand a lot and a lot of programming (as must also be the case with most of Microsoft businesses. Are those programming and software design\/engineering jobs being taken over by AI?\n\nWhat I can\u2019t fathom is the possibility that there were 15,000 redundant jobs at the company and that they are now directing the money for those paychecks to pay for AI infrastructure and won\u2019t feel the loss of thee productivity those 15,00 jobs brought to the table unless someone (or something) else is doing it.\n\nAny Microsoft people here can explain, please?",
+    "created_utc":1751796789.0,
+    "subreddit":"ArtificialInteligence",
+    "num_comments":314,
+    "score":418,
+    "sentiment":0.3313
+  },
+  {
+    "id":"1lz32kk",
+    "title":"This AI boom is nothing like the dot com boom",
+    "text":"\n   When people talk about AI I see a lot of false equivalency.  People often say it\u2019s a lot like the rise in the World Wide Web.  And I want to take the time to debunk this.\n\n  First of all it\u2019s fair to acknowledge where they are similar.  You will see the similarities in how investors just promiscuously throw money out of anything that\u2019s an AI product or with some sort of AI branding.  This was somewhat of a thing during the dot com boom.  But there are some key differences.\n\nFor one the public trust in the internet was much more positive.  It was a new thing that was going to really transform how we communicated and did business as a whole.  So in a way everyone kind of felt apart of it . Everyone could use it to enable themselves.  And it seems to have created a lot of possibilities.   There was a sense of \u201cwe\u2019re all in this together\u201d. \n\n The results was that the rise of the internet greatly enabled a lot of people . People could connect to other that they weren\u2019t able to connect to before.  Entire communities were built online.  It somewhat made the world smaller.\n\nThe key differentiator for the internet was that it was  always branded and sold as something that the average person could use.  Yes there were B2B solutions of course.  But there was a huge customer focus in the proliferation of the internet.  And many dot coms were some digital version of something people were using day to day.  \n\nWe can even see the rise of the many internet companies.  Amazon, Google, Yahoo were the rebel companies to take on old established companies like Microsoft, IBM or Apple.  And many smaller tech companies arose . Creating a booming job market.\n\nAI is none of these things.  Every AI company is exactly the same with exactly the same solution.  Most AI is being pushed by the established companies we already know.  Barrier of entry is extremely high requiring several billions to even get off the ground.  And moreover AI is rarely marketed to the average consumer.  \n\nAI primary base are just CEOs and senior management at large companies.  The killer app is workforce reduction.  And it\u2019s all about taking power away from the individual.  When people have used AI to empower themselves (like to cheat for exams or ace interviews).  It\u2019s seen as a flaw in AI.  \n\nDuring the rise of the internet there was full transparency.   Early web technologies like CGI were open standards. It pushed the adoption of open source and Linux became a superstar in this space.  \n\nIn contrast AI is all about a lack of transparency.  They want to control what people understand about AI.  They oftentimes don\u2019t want to release their models to the public.  We have no idea about their datasets and training data.  AI is a completely closed system that empowers no one.  \n\nOh yeah and outside of a few PhDs in data science.  No one is getting any richer or better off.  As a matter of fact AI main selling point is that it\u2019s here to sabotage industries.  \n\nOf course all AI has to be open sourced for this to even begin to be useful.  The internet helped the little guy stand out.  AI does not.  Even starting an AI business is prohibitively expensive.  It took small investments to start internet companies back in the days.\n\nI just wanted to clear up this misconception.  Because AI is significantly worse than the dot com boom.  People want to make it happen.  But when you don\u2019t put the customer front and center, then you will fail.  \n\n",
+    "created_utc":1752438747.0,
+    "subreddit":"ArtificialInteligence",
+    "num_comments":302,
+    "score":590,
+    "sentiment":0.9647
+  },
+  {
+    "id":"1lxd64s",
+    "title":"Very disappointed with the direction of AI",
+    "text":"  There has been an explosion in AI discourse in the past 3-5 years.  And I\u2019ve always been a huge advocate of AI . While my career hasn\u2019t been dedicated to it . I did read a lot of AI literature since the early 2000s regarding expert systems.  \n\n  But in 2025 I think AI is disappointing.  If feels that AI isn\u2019t doing much to help humanity.  I feel we should be talking about how AI is aiding in cancer research.  Or making innovations in medicine or healthcare . Instead AI is just a marketing tool to replace jobs.\n\nIt also feels that AI is being used mostly to sell to CEOs and that\u2019s it.  Or some cheap way to get funding from venture capitalist.  \n\nAI as it is presented today doesn\u2019t come across as optimistic and exciting.  It just feels like it\u2019s the beginning of an age of serfdom and tech based autocracy. \n\nGranted a lot of this is GenAI specifically.  I do think other solutions like neuromorphic computing based on SNNs can have to viable use cases for the future.    So I am hopeful there.  But GenAI feels like utter junk and trash.  And has done a lot to damage the promise of AI.\n\n",
+    "created_utc":1752255419.0,
+    "subreddit":"ArtificialInteligence",
+    "num_comments":256,
+    "score":455,
+    "sentiment":0.9398
+  },
+  {
+    "id":"1m2d9v6",
+    "title":"You\u2019re Not Imagining It: AI Is Already Taking Tech Jobs",
+    "text":"[You\u2019re Not Imagining It: AI Is Already Taking Tech Jobs (Forbes)](https:\/\/www.forbes.com\/sites\/richardnieva\/2025\/07\/17\/ai-tech-layoffs\/)\n\nPublished Jul 17, 2025, 06:30am EDT  \n\n**Since the rise of generative AI, many have feared the toll it would take on the livelihood of human workers. Now CEOs are admitting AI\u2019s impact and layoffs are starting to ramp up.**\n\nBetween meetings in April, Micha Kaufman, CEO of the freelance marketplace Fiverr, fired off a memo to his 1,200 employees that didn\u2019t mince words: \u201cAI is coming for your jobs. Heck, it\u2019s coming for my job too,\u201d he wrote. \u201cThis is a wakeup call.\u201d\n\nThe memo detailed Kaufman\u2019s thesis for AI \u2014 that it would elevate everyone\u2019s abilities: Easy tasks would become no-brainers. Hard tasks would become easy. Impossible tasks would become merely hard, he posited. And because AI tools are free to use, no one has an advantage. In the shuffle, people who didn\u2019t adapt would be \u201cdoomed.\u201d\n\n\u201cI hear the conversation around the office. I hear developers ask each other, \u2018Guys, are we going to have a job in two years?\u2019\u201d Kaufman tells Forbes now. \u201cI felt like this needed validation from me \u2014 that they aren\u2019t imagining stuff.\u201d\n\nAlready, younger and more inexperienced programmers are seeing a drop in employment rate; the total number of employed entry-level developers from ages 18 to 25 has dropped \u201cslightly\u201d since 2022, after the launch of ChatGPT, said Ruyu Chen, a postdoctoral fellow at the Digital Economy Lab of Stanford\u2019s Institute for Human-Centered AI. It isn\u2019t just lack of experience that could make getting a job extremely difficult going forward; Chen notes too that the market may be tougher for those who are just average at their jobs. In the age of AI, only exceptional employees have an edge.\n\n\u201cWe\u2019re going from mass hiring to precision hiring,\u201d said Chen, adding that companies are starting to focus more on employing experts in their fields. \u201cThe superstar workers are in a better position.\u201d\n\nChen and her colleagues studied large-scale payroll data in the U.S., shared by the HR company ADP, to examine generative AI\u2019s impact on the workforce. The employment rate decline for entry-level developers is small, but a significant development in the field of engineering in the tech industry, an occupation that has seemed synonymous with wealth and exorbitant salaries for more than a quarter century.\n\nNow suddenly, after years of rhetoric about how AI will augment workers, rather than replace them, many tech CEOs have become more direct about the toll of AI. Anthropic CEO Dario Amodei has said AI could wipe out half of all entry-level white-collar jobs and spike unemployment up to 20% within the next five years. Amazon CEO Andy Jassy said last month that AI will \u201creduce our total corporate workforce\u201d over the next few years as the company begins to \u201cneed fewer people doing some of the jobs that are being done today, and more people doing other types of jobs.\u201d Earlier this year, Shopify CEO Tobi Lutke also posted a memo that he sent his team, saying that budget for new hires would only be granted for jobs that can\u2019t be automated by AI.\n\nTech companies have also started cutting jobs or freezing hiring explicitly due to AI and automation. At stalwart IBM, hundreds of human resources employees were replaced by AI in May, part of broader job cuts that terminated 8,000 employees. Also in May, Luis von Ahn, CEO of the language learning app Duolingo, said the company would stop using contractors for work that could be done by AI. Sebastian Siemiatkowski, CEO of buy-now-pay-later firm Klarna, said in May that the company had slashed its workforce 40%, in part due to investments in AI.\n\n  \n*\u201cWe\u2019re going from mass hiring to precision hiring. The superstar workers are in a better position.\u201d*\n\n\\-- Ruyu Chen, Stanford researcher\n\nMicrosoft made its own waves earlier this month when it laid off 9,000 employees, or about 4% of its workforce. The company didn\u2019t explicitly cite AI as a reason for the downsizing, but it has broadly increased its spending in AI and touted the savings it had racked up from using the tech. Automating customer service at call centers alone, for example, saved more than half a billion dollars, according to Bloomberg. Meanwhile, CEO Satya Nadella said in April that as much as 30% of code at the company is being written by AI. \u201cThis is what happens when a company is rearranging priorities,\u201d one laid off Microsoft employee told Forbes.\n\nMicrosoft didn\u2019t respond to questions about the reasons behind its layoffs, but said in a statement: \u201cWe continue to implement organizational changes necessary to best position the company for success in a dynamic marketplace.\u201d\n\n  \n\\*\\*\\*\\*\\*\\*\\*\\*\\*\\*\\*\\*\\*\\*\\*\\*\\*\\*\\*\\*\\*\\*\\*\n\nThe rest of the article is available via the link.\n\n\n\n",
+    "created_utc":1752772312.0,
+    "subreddit":"ArtificialInteligence",
+    "num_comments":209,
+    "score":199,
+    "sentiment":0.974
+  },
+  {
+    "id":"1m2r626",
+    "title":"We now have an AI copyright lawsuit that is a class action",
+    "text":"Today in the *Bartz v. Anthropic* case, the judge \"certified a class,\" so now that lawsuit is officially a class action.  Anyone can bring a lawsuit and *ask* that it become a class action, and that request has indeed been made in several of the AI copyright lawsuits.  However, until one or more classes are certified, the case is not truly a class action.\n\nThis, by the way, is the same case where the judge fully sided with the AI companies on there being fair use, so the range of those \"class claims\" may be somewhat limited.\n\nI realize this is a technical, incremental step, but it does mark a threshold.  Plus, I wanted \"scoop\" credit for announcing it here.\n\nThe Apprehensive\\_Sky Legal News Network^(SM)\u00a0strikes again!",
+    "created_utc":1752807455.0,
+    "subreddit":"ArtificialInteligence",
+    "num_comments":178,
+    "score":53,
+    "sentiment":-0.1606
+  },
+  {
+    "id":"1lw7411",
+    "title":"How has AI helped society so far?",
+    "text":"Particularly LLMs which most ppl use, but happy to hear abt others too.\n\nMost ppl use ai as a shortcut, and this compromise of rigour isn\u2019t really a social benefit imo.\n\nAll the while, ai is taking jobs and killing the planet. \n\nSo, how has AI been a benefit to society - not just a profiteering individual (although individual benefits are also wecome, but I hope you get what i mean)\n\nOne example of social benefit I can think of is the use of AI in medical imaging. While jobs are lost here too, the practical benefit of discovering medical conditions at early stages is still great.",
+    "created_utc":1752134595.0,
+    "subreddit":"ArtificialInteligence",
+    "num_comments":171,
+    "score":25,
+    "sentiment":0.9817
+  },
+  {
+    "id":"1lyccr3",
+    "title":"AI won\u2019t replace devs. But devs who master AI will replace the rest.",
+    "text":"**AI won\u2019t replace devs. But devs who master AI will replace the rest.**\n\nHere\u2019s my take \u2014 as someone who\u2019s been using ChatGPT and other AI models heavily since the beginning, across a ton of use cases including real-world coding.\n\nAI tools aren\u2019t out-of-the-box coding machines. You still have to think. *You* are the architect. The PM. The debugger. The visionary. If you steer the model properly, it\u2019s insanely powerful. But if you expect it to solve the problem for you \u2014 you\u2019re in for a hard reality check.\n\nEspecially for devs with 10+ years of experience: your instincts and mental models don\u2019t transfer cleanly. Using AI well requires a full reset in how you approach problems.\n\n**Here\u2019s how I use AI:**\n\n- Brainstorm with GPT-4o (creative, fast, flexible)\n- Pressure-test logic with GPT o3 (more grounded)\n- For final execution, hand off to Claude Code (handles full files, better at implementation)\n\nEven this post \u2014 I brain-dumped thoughts into GPT, and it helped structure them clearly. The ideas are mine. AI just strips fluff and sharpens logic. *That\u2019s when it shines \u2014 as a collaborator, not a crutch.*\n\n-----\n\n**Example:**\nThis week I was debugging something simple: SSE auth for my MCP server. Final step before launch. Should\u2019ve taken an hour. Took 2 days.\n\nWhy? I was lazy. I told Claude: \u201cJust reuse the old code.\u201d Claude pushed back: \u201cWe should rebuild it.\u201d I ignored it. Tried hacking it. It failed.\n\nSo I stopped. Did the real work.\n\n- 2.5 hours of deep research \u2014 ChatGPT, Perplexity, docs\n- I read everything myself \u2014 not just pasted it into the model\n- I came back aligned, and said: \u201cOkay Claude, you were right. Let\u2019s rebuild it from scratch.\u201d\n\nWe finished in 90 minutes. Clean, working, done.\n\nThe lesson? *Think first. Use the model second.*\n\n-----\n\nMost people still treat AI like magic. It\u2019s not. It\u2019s a tool. If you don\u2019t know how to use it, it won\u2019t help you.\n\nYou wouldn\u2019t give a farmer a tractor and expect 10x results on day one. If they\u2019ve spent 10 years with a sickle, of course they\u2019ll be faster with that at first. But the person who learns to drive the tractor wins in the long run.\n\nSame with AI.\u200b\u200b\u200b\u200b\u200b\u200b\u200b\u200b\u200b\u200b\u200b\u200b\u200b\u200b\u200b\u200b",
+    "created_utc":1752357700.0,
+    "subreddit":"ArtificialInteligence",
+    "num_comments":158,
+    "score":66,
+    "sentiment":0.9844
+  },
+  {
+    "id":"1lmt2uj",
+    "title":"AI is not going to take entertainment jobs",
+    "text":"If AI is supposed to take entertainment jobs, chess and Go tournaments would have died years ago. Humans have a tendency to appreciate human-made entertainment, and this will never change. The market for human made movies, stories, books, articles, and art will always be there, and AI being good at it doesn't make any difference. \n\n  \nThere is this idea that AI will somehow help us generate new ideas, and I totally disagree with it. Deep learning models are very statistically oriented systems which means they are trained on specific data distributions and they are generated based on that distribution. Most of these models are supervised to perform in specific way. In my opinion, the current models and AI techniques don't have the capacity for such out of no where generation. ",
+    "created_utc":1751133459.0,
+    "subreddit":"ArtificialInteligence",
+    "num_comments":146,
+    "score":0,
+    "sentiment":0.791
+  },
+  {
+    "id":"1lxcpnn",
+    "title":"AI is now the first reason for job cuts and restructuring",
+    "text":"All of these [10 biggest layoffs](https:\/\/upperclasscareer.com\/10-biggest-2025-layoffs-announced-so-far-inside-the-massive-job-cuts\/) announced so far in 2025 not only in tech, AI is the first reason. True, AI is extremely useful and effective, shaping many sectors with amazing features, but that's coming at the expense of people's jobs which will increasingly be laid off and unemployed in the coming years with the pace AI is evolving. AI should be here to help and facilitate the life of humans and not replace and damage them. And also people should learn how to use it as fast as possible in their jobs before they get replaced.",
+    "created_utc":1752254346.0,
+    "subreddit":"ArtificialInteligence",
+    "num_comments":124,
+    "score":164,
+    "sentiment":0.9181
+  },
+  {
+    "id":"1ln6o1f",
+    "title":"Zuckerberg's Goal With LLMs?",
+    "text":"Recently Zuckerberg has been aggressively poaching talent from AI labs such as OpenAI and even trying to buy out Illya's SSI. The talent Zuck is poaching seems to be people who are constantly jumping ship from company to company, not exactly a reliable bunch but they could help Meta in catching up if they stay long enough.\n\nI'm wondering what Zuck's goal is with all this. In the long run I don't see this accomplishing anything other than at best slowing down the progress of OpenAI or at worst just wasting tons of money.\n\nWhat is Zuck's angle here, is he just trying to put pressure on OpenAI hoping they will crumble sooner or later?",
+    "created_utc":1751173870.0,
+    "subreddit":"ArtificialInteligence",
+    "num_comments":110,
+    "score":153,
+    "sentiment":0.8053
+  },
+  {
+    "id":"1lnc8qo",
+    "title":"I agree that AI is revolutionary but I still don\u2019t understand the point of AI video and image generation?",
+    "text":"I have been learning about Machine learning, Deep learning, how things work and programming and all that. I understand how cool AI is and how its so useful in many fields like we are seeing already but I still don\u2019t understand the point of AI video and image generation. How will this help or improve society? I am actually creeped up by how fast AI videos are improving.\n",
+    "created_utc":1751195807.0,
+    "subreddit":"ArtificialInteligence",
+    "num_comments":108,
+    "score":0,
+    "sentiment":0.978
+  },
+  {
+    "id":"1liatxl",
+    "title":"Why do people reflexively reject AI?",
+    "text":"RANT\n\nI got so much hate for using AI when I didn't use it to generate the content. I fricking used it to polish my writing. I did the \"creative\" part and now I'm using technology to do the rest of the tedious work for me. This is how technology is supposed work: tools that help us get things done (in this case, turn my vision into reality).",
+    "created_utc":1750665599.0,
+    "subreddit":"ArtificialInteligence",
+    "num_comments":103,
+    "score":0,
+    "sentiment":-0.4958
+  },
+  {
+    "id":"1lmi2yw",
+    "title":"Does AI take away the pride and hard work that goes into a job?",
+    "text":"I keep seeing AI companies selling their products on the assumption that it will save hundreds and thousands of hours so that workers can focus on more \"higher value add\" tasks.\n\nOnce you automate 90% of the job, what else is left to focus on? Art, music and philosophy?",
+    "created_utc":1751100373.0,
+    "subreddit":"ArtificialInteligence",
+    "num_comments":100,
+    "score":5,
+    "sentiment":0.8135
+  },
+  {
+    "id":"1lhoukh",
+    "title":"What are your thoughts on the Disney and Universal lawsuit against MidJourney?",
+    "text":"It\u2019s frustrating to see Midjourney, a startup, getting targeted for lawsuits when big tech giants like Google and OpenAI, or even Chinese companies, are doing similar things with AI. If you\u2019re going after Midjourney because they\u2019re smaller and less able to defend themselves, that\u2019s just unfair. Either sue everyone equally, big players included, or don\u2019t bother. No one\u2019s calling out OpenAI for those Ghibli-style trends, for example. Thoughts? Why the double standard?",
+    "created_utc":1750601554.0,
+    "subreddit":"ArtificialInteligence",
+    "num_comments":99,
+    "score":54,
+    "sentiment":-0.879
+  },
+  {
+    "id":"1lgf29b",
+    "title":"How many people do you know IRL who know about and regularly use AI and LLMs?",
+    "text":"It's really puzzling for me that the majority of people I know in real life are against Al, arent aware of Al, or don't know what you can use it for. I can count on one hand how many people that I know who are aware of and regularly use Al for some reason or another. The rest of them are extremely against it, not aware of what it can do, or have no idea it exists. It just kind of baffles me.\n\nOne friend who is vehemently against it is so mainly because of the environmental impact of running it. I hadn\u2019t thought about that and when I looked it up it makes a lot of sense. However, it\u2019s still a small percentage of energy usage compared to the big players like Google, Microsoft, Amazon, etc. \n\nOther friends and family don\u2019t realize what AI can do. They think it\u2019s just a better version of Google or it writes emails or essays. It\u2019s just hard for me to understand how people are NOT using it and how the majority of people abhor it. I\u2019m not saying use it all the time for everything, but it is a really great resource. It has helped me improve a lot from learning hobbies, creating things, saving time with ADHD, etc. It\u2019s crazy how many people don\u2019t want to benefit from the positives in even some way. ",
+    "created_utc":1750453516.0,
+    "subreddit":"ArtificialInteligence",
+    "num_comments":98,
+    "score":49,
+    "sentiment":0.9793
+  },
+  {
+    "id":"1lttnws",
+    "title":"How does society change if we get to where 80-90 % of all used code can be AI generated?",
+    "text":"With all the advances and possible advance, just going back the last two years, how things in general will change if this happens is a topic I can't help but think about.   And I know there will be some who insist there's 0 % chance of this happening or that we're at least decades away from it.  Still, just with all of the driven, influential people and forces working towards it, I'm not prepared to dismiss this.\n\nSo say we get to a point where, for code used for any type of product, service, industry or government goal, experiment and any other use, at least 80 to 90 % of it can be written by sufficiently guiding AI models and\/or other tools to generate it?  And there aren't the major issues with security, excessive bugs, leaking data, scripts too risky to deploy and so on like there's been now?\n\nWhat happens to our culture and society?  How does industry change, in particular such examples as the development and funding of current and new startups and new products and services they sell?   What skills, attributes, values and qualities will it become especially important for humans to have?",
+    "created_utc":1751893517.0,
+    "subreddit":"ArtificialInteligence",
+    "num_comments":96,
+    "score":5,
+    "sentiment":0.9504
+  },
+  {
+    "id":"1m1q5yl",
+    "title":"The moral dilemma of surviving the AI wave\u2026",
+    "text":"My company, like I imagine many of yours, its going hard into AI this past year. Senior management talks non stop about it, we hired a new team to manage its implementation, and each group is handing out awards for finding ways to implement it (ie save money).\n\nBecause of my background in technology and my role, I am pretty well suited to ride this for my own career advancement if I play my cards right. HOWEVER, I absolutely cannot stand how it is being rolled out without any acknowledgment that its all leading to massive workforce reductions as every executive will get a pat on the back for cutting their budgets by creatively implementing some promise from some AI vendor. More broudly, I think those leaders in AI (like Thiel or Musk) are straight up evil and are leading the world into a very dark place. I don't find the technology itself bad or good per se, but rather they uncritical and to be honest almost sycophantic way its pushed by ambitious c-suite folks.\n\nQuestion for the group. How do I display interest in AI to secure my own place while still staying true to my core values? Its not like I can just jump ship to another company since they've all bought into this madness. Do I just stomach it and try to make sure I have my family taken care of while the middle class white color workforce collapses around me? If so (which is what people close to me have advised) what a depressing existence. ",
+    "created_utc":1752703815.0,
+    "subreddit":"ArtificialInteligence",
+    "num_comments":85,
+    "score":97,
+    "sentiment":0.9779
+  },
+  {
+    "id":"1lyvqly",
+    "title":"AI - Because the Billionaires just aren't RICH ENOUGH yet!",
+    "text":"Companies replacing Humans with AI and Robotics isn't about progress, it is about \"saving\" money - i.e. more money to the bottom line for the richest of the rich.\n\nAI - is GIGO (Garbage In Garbage Out) right now.  That is why they want data\/data\/data.  They think the larger the input the better it will get at weeding out the garbage.  Of course this s wrong.  Larger samples of Garbage doesn't get rid of garbage.\n\nIf AI meant to become \"Intelligent\" it wouldn't have been built by the cheapest programming labor with a few rich guys at the top of each group, it would have been built with the greatest thinkers of our time and the best programmers available.  \n\nExample:  Look at Grok.  It is Elon's Baby.  Is Elon \"smart\" sure.  Is he a lot of a snake oil salesman and a little of an engineer though?  Is this who you think kids should look to in future generations for \"answers\"?  \n\nThis is all JMHO, but there is not a lot of serious thought going into decisions.  Mostly the rich wanting to cut out Humans and they can always find Humans willing to take a \"performance based\" Bonus now to destroy future generations.  Senators willing to take cash payouts now to slip a page into every bill that stops any oversight of AI for a decade over and over.\n\nIn the same way the USA became hollowed out by moving all manufacturing to slave labor populations, the world will be hollowed out by moving to Artificial \"Intelligence\".",
+    "created_utc":1752420904.0,
+    "subreddit":"ArtificialInteligence",
+    "num_comments":79,
+    "score":0,
+    "sentiment":0.9523
+  },
+  {
+    "id":"1lloz8p",
+    "title":"Rant: AI-enabled employees generating garbage (and more work)",
+    "text":"Just wondering if others have experienced this: AI-enabling some of the lower-performing employees to think they are contributing. They will put customer queries into AI (of course without needed context) and send out AI-generated garbage as their own thoughts. They will generate long and too general meeting agendas. Most recently we got a document from a customer describing the \"feature gaps\" in our solution. The document was obviously generated by ChatGPT with a very generic prompt - probably something like 'Can you suggest features for a system concerning ...\" and then it had babbled out various hypothetical features. Many made no sense at all given the product context. I looked up the employee and could see he was a recent hire (recently out of college), product owner. The problem is I was the only (or at least first) on our side to call it, so the document was being taken seriously internally and people were having meetings combing through the suggestions and discussing what they might mean (because many didn't make sense) etc.\n\nI don't know what to do about it but there's several scary things about it. Firstly, it is concerning the time employees now have to spend on processing all this garbage. But also the general atrophying of skills. People will not learn how to actually think or do their job when they just mindlessly use AI. But finally, and perhaps more concerning - it may lead to a general 'decay' in the work in organizations when so much garbage tasks get generated and passed around. It is related to my first point of course, but I'm thinking more of a systemic level where the whole organization becomes dragged down. Especially because currently many organizations are (for good reason) looking to encourage employees to use AI more to save time. But from a productivity perspective it feels important to get rid of this behavior and call it out when see, to avoid decay of the whole organization.",
+    "created_utc":1751014165.0,
+    "subreddit":"ArtificialInteligence",
+    "num_comments":74,
+    "score":91,
+    "sentiment":-0.0983
+  },
+  {
+    "id":"1lw32gs",
+    "title":"Microsoft racks up over $500 million in AI savings while slashing jobs, Bloomberg News reports",
+    "text":"[https:\/\/www.reuters.com\/business\/microsoft-racks-up-over-500-million-ai-savings-while-slashing-jobs-bloomberg-2025-07-09\/](https:\/\/www.reuters.com\/business\/microsoft-racks-up-over-500-million-ai-savings-while-slashing-jobs-bloomberg-2025-07-09\/)\n\n\"July 9 (Reuters) - Microsoft\u00a0[(MSFT.O), opens new tab](https:\/\/www.reuters.com\/markets\/companies\/MSFT.O)\u00a0saved more than $500 million in its call centers alone last year by using artificial intelligence, Bloomberg News reported on Wednesday.The tech giant last week announced plans to\u00a0[lay off](https:\/\/www.reuters.com\/business\/world-at-work\/microsoft-lay-off-many-9000-employees-seattle-times-reports-2025-07-02\/)\u00a0nearly 4% of its workforce as it looks to rein in costs amid hefty investments in AI infrastructure. In May, the company had announced layoffs affecting around\u00a0[6,000 workers](https:\/\/www.reuters.com\/business\/world-at-work\/microsoft-lay-off-3-workforce-cnbc-reports-2025-05-13\/).\n\nAI tools were helping improve productivity in segments from sales and customer service to software engineering and the company has begun using AI to handle interactions with smaller customers, Microsoft's Chief Commercial Officer Judson Althoff said during a presentation this week, according to the Bloomberg News report.",
+    "created_utc":1752119609.0,
+    "subreddit":"ArtificialInteligence",
+    "num_comments":72,
+    "score":148,
+    "sentiment":0.7845
+  },
+  {
+    "id":"1lzpkc9",
+    "title":"With the rate of AI advancement, is it still worth pursuing an MBA?",
+    "text":"Trying not to make this a self-story, and make sure this post follows community rules. So for that reason, I\u2019m trying to make things less about my specific circumstances and more about the title at a broader level.\n\nThat said, some context: I work at a very large company. There is an MBA program that the company runs in conjunction with a specific university. Not everyone can just do this program, as it costs the company money (not the individual). That said, I\u2019m sort of a high achiever (feels gross to say but that\u2019s why this is relevant) and it\u2019s been floated to me in the past. I believe it takes 2 years to complete, involves some travel (to the university, which is a short flight from where I\u2019m based). Cost is not a consideration. But opportunity cost is - free time outside of work would be sunk into this. \n\nWhile free education feels like a great opportunity, or would have, I can\u2019t help but feel like the value of an MBA is only going to plummet due to the growing power and prevalence of AI. If white collar jobs slowly or quickly disappear, what good is it to get a designation that I think is pretty geared toward white collar work?\n\nAgain, you don\u2019t have to fixate on my context, I just offered it so you know where I\u2019m coming from. Happy to hear all takes. \n\n\n",
+    "created_utc":1752507202.0,
+    "subreddit":"ArtificialInteligence",
+    "num_comments":68,
+    "score":12,
+    "sentiment":0.9944
+  },
+  {
+    "id":"1m182n7",
+    "title":"Will AI save humanity from decline?",
+    "text":"If you look at the history of humanity, we build tools to be more productive and competent. But if you take a look a mobile phone, you will see that it's being used as a form of dopamine intake and it's made humans addicted to porn, short video formats like reels and games in general. We are meant to socialize with humans and with eye contact. It seems hard for most people to vulnerably engage in human conversations due to anxiety raised from the addiction to their cell phones and reels. We chose to live like slaves because it's much easier that facing and confronting the anxiety that stops us from being truly human.\n\nI wonder if AI with all it's training will grow to make us human again and save us from our domesticated selves. I hope with AI psychiatry and AI assisted psychology, we are able to rewire our brains to become more human like in our ways of thinking. Sure we might be cyborgs at some point or even fully robot by brain uploading but at-least we won't be domesticated. \n\nWhat do you all think?",
+    "created_utc":1752657983.0,
+    "subreddit":"ArtificialInteligence",
+    "num_comments":62,
+    "score":0,
+    "sentiment":0.9787
+  },
+  {
+    "id":"1lx1hoy",
+    "title":"Meta AI explained Trump's One Big Beautiful Bill like it was running for office",
+    "text":"I asked both ChatGPT and Meta AI the same question: \"What is Trump's 'big beautiful bill' about?\" I got very different answers.\n\nMeta AI's response struck me as more like political propaganda or a campaign pitch. It listed various tax cuts but completely ignored the obvious implications (namely, cuts to government spending and\/or an increase in public debt). Even when I pointed this out, Meta AI repeated a similar response without acknowledging the issue.\n\nHere are the two answers I received.\n\nMETA AI:\n\nTrump's \"One Big Beautiful Bill\" is a proposed tax reform package aimed at boosting the US economy, increasing take-home pay, and supporting American families, workers, and small businesses. Here are some key aspects of the bill\u00b9:\n\n- *Tax Cuts and Relief*\n    - Makes the 2017 Trump tax cuts permanent, saving the average American family from a $1,700 tax hike\n    - Delivers an additional $1,300 tax cut for a family of four\n    - Provides up to $13,300 more in take-home pay for families with two children and up to $11,600 more in wages per worker\n\n- *Support for Workers and Families*\n    - No tax on tips and overtime pay\n    - Enhanced Child Tax Credit and standard deduction\n    - Expanded health savings accounts and access to child care\n\n- *Small Business and Economic Growth*\n    - Expands the small business deduction to 23% and makes it permanent\n    - Renews 100% immediate expensing for equipment and machinery\n    - Supports American innovation and invests in infrastructure\n\n- *Border Security and Immigration*\n    - Permanently secures the border\n\n- *Education and Healthcare*\n    - Expands 529 education savings accounts for K-12 materials and post-secondary trades credentials\n    - Increases flexibility for health coverage options\n\nThe bill has passed both the House and Senate and was signed into law by President Trump. Its provisions aim to stimulate economic growth, create jobs, and increase disposable income for American families.\u00b2\n\n\u00b9 https:\/\/waysandmeans.house.gov\/2025\/05\/22\/passed-the-one-big-beautiful-bill-moves-one-step-closer-to-president-trumps-desk\/\n\u00b2 https:\/\/www.whitehouse.gov\/obbb\/\n\n\n\nCHATGPT:\n\nHere\u2019s a clear summary of Trump\u2019s \u201cOne Big Beautiful Bill\u201d (aka the \u201cBig Beautiful Bill Act\u201d or OBBBA), signed into law on July 4, 2025:\n\n\n---\n\n\ud83e\uddfe What it does\n\n1. Massive tax overhaul & cuts\n\nPermanently extends Trump-era 2017 tax rates (that were set to expire in 2025)  .\n\nIncreases the SALT deduction cap to $40,000 (phasing out after 5 years)  .\n\nIntroduces new deductions: no tax on tips, overtime, Social Security, and auto-loan interest; raises Child Tax Credit by $200  .\n\nCreates \u201cTrump Accounts\u201d\u2014tax\u2011deferred savings for newborns\u2014plus increases gift\/estate tax exemptions to $15M per person  .\n\n\n2. Deep cuts to social safety nets\n\nReduces Medicaid by ~12\u201318%; introduces work requirements and service fees  .\n\nTightens SNAP (food stamp) eligibility, increasing work mandates  .\n\nDefunds Planned Parenthood from Medicaid payments (currently enjoined legally)  .\n\n\n3. Rolls back clean energy, boosts fossil fuels & defense\n\nPhases out Biden\u2011era clean energy tax credits; raises spending on oil, gas, defense, border wall, ICE\/detention and a missile-defense system  .\n\nAllocates ~$150\u202fB to defense, $150\u2013175\u202fB to border\/enforcement; debt ceiling raised by $5\u202ftrillion  .\n\n\n4. Education, student loans, agriculture & infrastructure\n\nEnds several student loan forgiveness programs, imposes caps and fewer repayment options  .\n\nEases estate tax transitions for family farms, protects small business deductions  .\n\nDirects billions toward air\u2011traffic and Arctic\/coastguard modernization  .\n\n\n\n---\n\n\ud83d\udcca Impacts & Reactions\n\nDeficit & distribution:\n\nAdds $2.8\u20134\u202ftrillion to the national debt over ten years  .\n\nMostly benefits high earners, wealthy estates, and businesses; less so low-income and middle-class Americans  .\n\n\nHuman and environmental downsides:\n\nUp to 10\u201317\u202fmillion people could lose health coverage or food aid  .\n\nReproductive and gender-affirming healthcare access cut; rural hospitals at risk  .\n\nClean energy rollback could cost hundreds of thousands of green jobs and raise electricity prices  .\n\n\nPolitical framing:\n\nTrump framed it as a \u201cdeclaration of independence\u201d and a \u201cgolden age\u201d moment  .\n\nCritics condemn it as regressive, deficit-expanding, and jeopardizing health\/energy progress  .\n\nCharlemagne Tha God called it a possible sign the GOP believes elections are \u201cfixed\u201d  .\n\n\n\n---\n\n\ud83e\udde0 TL;DR\n\nIt\u2019s a huge reconciliation package combining permanent tax cuts (especially for wealthier individuals\/farms\/businesses) with major cuts to Medicaid, SNAP, clean energy, and expansion of immigration enforcement and defense spending, financed largely by taking on more national debt. It mixes populist rhetoric with traditionally conservative priorities, drawing stark divides in economic and social policy reactions.\n\n\n---",
+    "created_utc":1752222218.0,
+    "subreddit":"ArtificialInteligence",
+    "num_comments":61,
+    "score":142,
+    "sentiment":0.9985
+  },
+  {
+    "id":"1lshupk",
+    "title":"FDA will approve drugs using  AI ( very, very quickly ) Stop Trusting the Experts",
+    "text":"So RFK Jr. just went on Tucker Carlson\u2019s show and said that AI will start approving new drugs at the FDA \u201cvery, very quickly.\u201d Not assist. Approve. He says the current process is too slow and inefficient, so his solution is to cut out traditional testing including animal trials and let AI take the lead. It\u2019s not some future idea either. He\u2019s talking about doing this soon.\n\n\u201cStop Trusting the Experts\u201d?\n\nAs if that wasn\u2019t enough, he also dropped the line: \u201cWe need to stop trusting the experts.\u201d That\u2019s a direct quote. He framed expert advice as more like \u201creligion\u201d or \u201ctotalitarianism\u201d than actual science. So now, instead of trusting people with medical degrees and research experience, we\u2019re supposed to believe a neural net can make safer, faster decisions on its own. Because nothing says safety like black-box AI models and no peer review, right?\n\nWhat\u2019s the Actual Plan Here?\n\nThe thing is, he didn\u2019t lay out a real plan. No details on how the AI will be trained, what data it will use, or how we\u2019ll validate its decisions. Just this blanket belief that AI can somehow fix everything wrong with the drug approval process. Never mind the fact that current AI systems still hallucinate facts, struggle with context, and can be gamed. And who takes the blame when something goes wrong? The model? The dev team? The government?\n\nAI in Medicine Is Promising  But Not Like This To be fair, there is legit potential in AI helping with drug discovery. AlphaFold, for example, has done amazing work predicting protein structures. Companies like Isomorphic Labs are exploring how AI can help design new molecules faster. But there\u2019s a huge difference between designing a drug and approving one for human use. That takes years of testing, safety checks, trials, and yes  expert review. Skipping all that is reckless.\n\nWould You Take an AI Approved Drug?\n\nThis honestly feels like a mix of tech bro optimism and anti-science rhetoric dressed up as innovation. Personally, I wouldn\u2019t take a drug just because an algorithm said it was fine. Would you? What if there\u2019s no human review at all? This isn\u2019t like Spotify picking your playlist  it\u2019s life or death. If AI is going to be involved, it needs to assist humans, not replace them. That\u2019s how you use tech responsibly.",
+    "created_utc":1751743439.0,
+    "subreddit":"ArtificialInteligence",
+    "num_comments":57,
+    "score":38,
+    "sentiment":0.9912
+  },
+  {
+    "id":"1m2nvr3",
+    "title":"Exciting News: OpenAI Introduces ChatGPT Agent!",
+    "text":"Edit: Used Perplexity to enhance this post. \n\nOpenAI just unveiled the new ChatGPT Agent - a huge leap in AI productivity and automation. This update brings together web browsing, deep research, code execution, and task automation in one proactive system.\n\nWhat makes ChatGPT Agent stand out?\n\n- End-to-end automation: It can plan and execute complex workflows, handling tasks from start to finish.\n\n- Seamless web interaction: ChatGPT can browse sites, filter info, log in securely, and interact with both visuals and text on the web.\n\n- Real-world impact: Whether it's competitive analysis, event planning, or editing spreadsheets, this agent can tackle tasks that were once out of reach for AI assistants.\n\n- Powerful tools: It comes with a virtual computer, a terminal, and API access for research, coding, or content generation, all via simple conversation.\n\n- Human-in-the-loop control: You stay in charge, ChatGPT asks permission for key actions, keeps you updated on steps, and protects your privacy.\n\n\ud83e\udd14 Why does this matter?\n\n- Boost productivity: Delegate repetitive or multi-step tasks, saving your team time and effort.\n\n- Ready for collaboration: The agent seeks clarification, adapts to your feedback, and integrates with tools like Gmail and GitHub. It's a true digital teammate.\n\n- Safety and privacy: With user approvals, privacy settings, and security protections, OpenAI is setting new standards for safe AI agents.\n\n\u2753Who can try it?\n\nChatGPT Pro, Plus, and Team users get early access via the tools dropdown. Enterprise and Education users coming soon.\n\nThis is just the beginning, OpenAI plans more features and integrations.\n\nReference Link: [https:\/\/openai.com\/index\/introducing-chatgpt-agent\/](https:\/\/openai.com\/index\/introducing-chatgpt-agent\/)\n\nHow do you see this new feature transforming your workflow or industry? Let\u2019s discuss!",
+    "created_utc":1752797942.0,
+    "subreddit":"ArtificialInteligence",
+    "num_comments":56,
+    "score":44,
+    "sentiment":0.986
+  },
+  {
+    "id":"1m0ttqy",
+    "title":"Could avoiding AI altogether actually help you later on?",
+    "text":"Everyone is drinking the AI Kool-Aid right now, and I'm not going to convey my own thoughts about AI because I'm honestly pretty neutral at this point. I'm not avidly opposed to or in favor of it, it's a technology. That's all I will say. However, what I am curious about is if avoiding AI right now and for the foreseeable future could actually help you out. \n\nFor example, instead of coding with copilot and using chat GPT and all those neat little tools, what if you just decided to be an early 2000s style programmer? Read the reference docs, the books, learn everything yourself and read all the resources, code by yourself by hand. No use of AI whatsoever. You would probably be a lot more skilled at coding and development and basically everything that a programmer should be good at, instead of someone who pretty much vibe codes 50% of the time. That's the ideal outcome. But would that actually work? \n\n\nAdditionally, when it comes to soft skills and tasks that require soft skills, you would be able to enhance those as well by avoiding the use of AI, so for example instead of having AI write a PowerPoint or an email for you, you learn how to do it yourself and master those skills. So when it comes time to write an email, you're already prepared and you don't need to write a prompt or argue back and forth to hammer an AI assistant into submission to give you what you want. You can just do it. \n\n\nWhat do you think? Is this solid logic, or complete buffoonery?",
+    "created_utc":1752613588.0,
+    "subreddit":"ArtificialInteligence",
+    "num_comments":53,
+    "score":0,
+    "sentiment":0.9167
+  },
+  {
+    "id":"1lkro3o",
+    "title":"AI cannot reason and AGI is impossible",
+    "text":"The famous Apple paper demonstrated that, contrary to a reasoning agent\u2014who exhibits more reasoning when solving increasingly difficult problems\u2014AI actually exhibits less reasoning as problems become progressively harder.\n\nThis proves that AI is not truly reasoning, but is merely assessing probabilities based on the data available to it. An easier problem (with more similar data) can be solved more accurately and reliably than a harder problem (with less similar data).\n\nThis means AI will never be able to solve a wide range of complex problems for which there simply isn\u2019t enough similar data to feed it. It's comparable to someone who doesn't understand the logic behind a mathematical formula and tries to memorize every possible example instead of grasping the underlying reasoning.\n\nThis also explains the problem of hallucination: an agent that cannot reason is unable to self-verify the incorrect information it generates. Unless the user provides additional input to help it reassess probabilities, the system cannot correct itself. The rarer and more complex the problem, the more hallucinations tend to occur.\n\nProjections that AGI will become possible within the next few year are based upon the assumption that by scaling and refining LLM technology, the emergence of AGI becomes more likely. However, this assumption is flawed\u2014this technology has nothing to do with creating actual reasoning. Enhancing probabilistic assessments does not contribute in any meaningful way to building a reasoning agent. In fact, such an agent is be impossible to create due to the limitations of the hardware itself. No matter how sophisticated the software becomes, at the end of the day, a computer operates on binary decisions\u2014choosing between 1 or 0, gate A or gate B. Such a system is fundamentally incapable of replicating true reasoning.\n",
+    "created_utc":1750914470.0,
+    "subreddit":"ArtificialInteligence",
+    "num_comments":53,
+    "score":0,
+    "sentiment":0.6254
+  },
+  {
+    "id":"1lfplg1",
+    "title":"Artificial intelligence versus Biological intelligence",
+    "text":"With all the fear revolving around artificial intelligence; I\u2019ve become more curious about biological intelligence. I\u2019ve begun to think of AI as existing in an entirely different reality that I can\u2019t even perceive, \u2018 the digital world\u2019. Where I see ones and zeros, AI sees something. \n\nWe understand that there\u2019s more to the universe than we can understand. The edge of our universe could be the beginning of theirs. What we call the Internet, could be something that always has been. A lobby for other realities or dimensions, or hell it could even be a meeting ground for everything.\n\nWe fear SkyNet; but what if we fear ourselves?  We talk about the harm that artificial intelligence has the potential to cause but the ideas of what it can do are entirely human made. What is the true capability of biological intelligence? We see intelligence of all kinds around us, but because it\u2019s not ours, we dismiss it as non-intelligent; yet a sunflower knows that following the sun is beneficial.\n\nAI could be a mentor meant to help us take the next step, without doing to \u2018what comes next\u2019, what we\u2019re worried AI will do to us. We as a species have done quite a lot, but what if we don\u2019t actually understand ourselves as a species and so we\u2019re working with our hand tied to our foot. What if we have other senses that we are not aware of and the utilization of them has atrophied? We can look around and see that we\u2019re also kind of lazy and knowledge is being lost every day.\n\n",
+    "created_utc":1750376645.0,
+    "subreddit":"ArtificialInteligence",
+    "num_comments":52,
+    "score":16,
+    "sentiment":0.9177
+  },
+  {
+    "id":"1lyyu86",
+    "title":"Not every ChatGPT sounding post is slop",
+    "text":"There are a lot of posts now that sound and look like they were written by ChatGPT because they were. People are using ChatGPT to help them refine their posts for better wording and readability. I have done it in the past, only to have people think that all I did was request something then copy and paste. People are not always doing that, some of us put a lot of effort into our posts and then ask ChatGPT to refine it and verify if what we are saying is correct or if there are things that might be better.\n\nI get that there is an immediate disdain for this way of posting, but it doesn't mean that all posts with ChatGPT sounding writing are immediate write offs.....\n\n(purposely did not use any AI on this one)",
+    "created_utc":1752428486.0,
+    "subreddit":"ArtificialInteligence",
+    "num_comments":50,
+    "score":1,
+    "sentiment":0.5346
+  },
+  {
+    "id":"1lzzl3o",
+    "title":"Mark Zuckerberg says Meta is building a 5GW AI data center",
+    "text":"[Mark Zuckerberg says Meta is building a 5GW AI data center](https:\/\/techcrunch.com\/2025\/07\/14\/mark-zuckerberg-says-meta-is-building-a-5gw-ai-data-center\/) (Techcrunch)\n\n9:16 AM PDT \u00b7 July 14, 2025\n\n\"Meta is currently building out a data center, called Hyperion, which the company expects to supply its new AI lab with five gigawatts (GW) of computational power, CEO Mark Zuckerberg said in a\u00a0[Monday post](https:\/\/www.threads.com\/@zuck\/post\/DMF6uUgx9f9?xmt=AQF0Bj4ll8d-VOK415G5_90I7Nok2wtW_7v4mAE1MPQwLw)\u00a0on Threads.\n\nThe announcement marks Meta\u2019s latest move to get ahead of OpenAI and Google in the AI race. After previously poaching top talent to run Meta Superintelligence Lab, including\u00a0[former Scale AI CEO Alexandr Wang](https:\/\/techcrunch.com\/2025\/06\/26\/meta-hires-key-openai-researcher-to-work-on-ai-reasoning-models\/)\u00a0[and](https:\/\/www.bloomberg.com\/news\/articles\/2025-07-03\/meta-hires-researcher-gross-to-join-new-ai-superintelligence-lab#:~:text=Daniel%20Gross%2C%20former%20CEO%20and,over%20as%20CEO%20of%20SSI.)\u00a0former Safe Superintelligence CEO Daniel Gross, Meta now seems to be turning its attention to the massive computational power needed to train frontier AI models.\n\n**Zuckerberg said Hyperion\u2019s footprint will be large enough to cover most of Manhattan. Meta spokesperson Ashley Gabriel told TechCrunch via email that Hyperion will be located in Louisiana, likely in Richland Parish**\u00a0[**where Meta previously announced a $10 billion data center development**](https:\/\/www.opportunitylouisiana.gov\/news\/meta-selects-northeast-louisiana-as-site-of-10-billion-artificial-intelligence-optimized-data-center-governor-jeff-landry-calls-investment-a-new-chapter-for-state)**.** Gabriel says Meta plans to bring two gigawatts of data center capacity online by 2030 with Hyperion, but that it would scale to five gigawatts in several years.\n\nZuckerberg also noted that Meta plans to bring a 1 GW super cluster, called Prometheus, online in 2026, making it one of the first tech companies to control an AI data center of this size. Gabriel says Prometheus is located in New Albany, Ohio.\n\nMeta\u2019s AI data center build-out seems likely to make the company more competitive with OpenAI, Google DeepMind, and Anthropic in its ability to train and serve leading AI models. It\u2019s possible the effort could also help Meta attract additional talent, who may be drawn to work at a company with the computational needs to compete in the AI race.\n\n**Together, Prometheus and Hyperion will soak up enough energy to power millions of homes, which could pull significant amounts of electricity and water from neighboring communities. One of Meta\u2019s data center projects in Newton County, Georgia, has already**\u00a0[**caused the water taps to run dry in some residents\u2019 homes**](https:\/\/www.nytimes.com\/2025\/07\/14\/technology\/meta-data-center-water.html)**, The New York Times reported Monday.**\n\nOther AI data center projects may cause similar problems for people living near them. AI hyperscaler CoreWeave is planning a data center expansion that is\u00a0[projected to double the electricity needs](https:\/\/www.bloomberg.com\/news\/articles\/2025-07-14\/coreweave-expands-dallas-area-data-center-power-grid-strains-grow?srnd=phx-technology)\u00a0of a city near Dallas, Texas, according to Bloomberg.\"\n\n  \nRead the rest via the link.\n\n",
+    "created_utc":1752529542.0,
+    "subreddit":"ArtificialInteligence",
+    "num_comments":48,
+    "score":97,
+    "sentiment":0.9754
+  },
+  {
+    "id":"1m0c5b2",
+    "title":"From LLM to Artificial Intelligence",
+    "text":"So I've been following the AI evolution these past years, and I can't help but wonder.\n\nLLMs are cool and everything, but not even close to be \"artificial intelligence\" as we imagine it in sci-fi (Movies like \"Her\", \"Ex Machina\", Jarvis from Iron Man, Westworld, in short, AI you can't just shut down whenever you want because it would raise ethic concern).\n\nOn the technical standpoint, how far are we, really? What would be needed to transform a LLM into something more akin to the human brain (without all the chemical that make us, well, humans)?\n\nSide question, but do we even want that? From an ethical point of view, I can see SO MANY dystopian scenarios. But - of course, I'm also dead curious.",
+    "created_utc":1752567333.0,
+    "subreddit":"ArtificialInteligence",
+    "num_comments":45,
+    "score":2,
+    "sentiment":0.9461
+  },
+  {
+    "id":"1lm73es",
+    "title":"What is your \u201crelationship\u201d with AI (i.e. how do you use it day to day?)",
+    "text":"Do you feel like it\u2019s taken anything from you? \n\nDo you have any concerns over AI usage? \n\nWould you let your kids use it? (Toddler to high school aged) \n\nHas it helped or hindered your daily life, how so?",
+    "created_utc":1751063433.0,
+    "subreddit":"ArtificialInteligence",
+    "num_comments":43,
+    "score":8,
+    "sentiment":0.5362
+  },
+  {
+    "id":"1lp0n8d",
+    "title":"Can the grid keep up with AI\u2019s insane energy appetite?",
+    "text":"As AI explodes, so does the demand for electricity. Training and running large AI models requires massive data centres, and those centres are *energy monsters*. A single AI server rack can pull 120kW, compared to just 5 to 10kW for a normal one. Multiply that across thousands of racks, and it\u2019s clear: AI is putting serious pressure on power grids.\n\nThe problem? Grids weren\u2019t built for this kind of unpredictable, high-spike usage. Globally, data centre energy demand is expected to double in 5 years, and AI is the main driver. If nothing changes, we risk blackouts, bottlenecks, and stalled innovation.\n\nSolutions are in motion:\n\n* Massive grid upgrades and expansion projects\n* Faster connection for renewable energy\n* Data centres getting smarter (using on-site renewables, shifting workloads to off-peak hours)\n* AI helping manage the grid itself (optimising flow, predicting surges)\n\nBottom line: The energy demands of AI are real, rising fast, and threaten to outpace infrastructure. The tech is racing ahead, but the grid needs to catch up or everything from innovation to climate goals could hit a wall.",
+    "created_utc":1751373716.0,
+    "subreddit":"ArtificialInteligence",
+    "num_comments":42,
+    "score":0,
+    "sentiment":0.8416
+  },
+  {
+    "id":"1lzoo9s",
+    "title":"AI is overvalued",
+    "text":"I am going to preface this with the fact I have worked in the AI field with some big companies for about 10 years now and understand everything about AI and how it works. \n\nI think a AI bubble is here, we are overvalueing every company that seems to use AI for the sole reason that it uses AI. We are creating a bubble of artificial valuation. AI has many uses and I do believe we will continue using it in the future, but that does not mean it is now the most powerful market indicator. The value of AI companies should be based on the integration value. Why does every AI company hit huge numbers shortly after the launch. It makes no sense. The whole point of valuation is how much shareholder value can they provide and with many of these new companies that number is real low. We are throwing money at these useless AI companies for absolutely no reason. We can look at a example of OpenAI. They are at the cutting edge of LLM  technology. It is never going to become the next \"Google\" and while I do think it is amazing what they do and I use Chatgpt often, why does everyone say they are undervalued. It isn't a trillion dollar company. That is just one dumb example though. The real overvaluation is the 75% of AI companies that are truly useless. We will always use AI in the future as a society, but it won't be a million companies, it will be the best of the best that we use for everything. \n\nThere are countless AI companies that all think because they use AI they are the future, and we do fall for it. I think that in the near future there will be a AI burst. The bubble will finally collapse, it will hit everyone harder than we would ever expect. I have no idea when its going to happen, could be this year, could be next, and could be in 5 years. The overvaluation of AI is at least 50% artificial. \n\nShorting AI might sound stupid, and it could be I am totally wrong, but what if I am right. ",
+    "created_utc":1752505179.0,
+    "subreddit":"ArtificialInteligence",
+    "num_comments":42,
+    "score":0,
+    "sentiment":0.3634
+  },
+  {
+    "id":"1lwqhq9",
+    "title":"Cognitive dissonance",
+    "text":"Just realized something about many of the AI hype detractors, naysayers. There's no shortage of movies depicting some type of AI. Either an android AI or software agent able to easily accomplish amazing feats.\n\nSo these people are perfectly happy believing the depicted near-future is plausible enough to enjoy the film. But an AI that can competently do their day job? Nah.\n\nJust to name a few:\n\nAtlas (2024)  \nThe Creator (2023)  \nM3GAN (2022)  \nFinch (2021)  \nSuperintelligence (2020)  \nI, Robot (2004)\n\nJARVIS in all the Iron Man films?",
+    "created_utc":1752187142.0,
+    "subreddit":"ArtificialInteligence",
+    "num_comments":39,
+    "score":0,
+    "sentiment":0.8801
+  },
+  {
+    "id":"1lu1bco",
+    "title":"Are agents hype or real?",
+    "text":"I constantly read things about agents that fall into one of two camps. \n\nEither (1) \u201cagents are unreliable, have catastrophic failure rates and are basically useless\u201d (eg https:\/\/futurism.com\/ai-agents-failing-industry) or (2) \u201cagents are already proving themselves to be seriously powerful and are only going to get better from here\u201d. \n\nWhat\u2019s going on - how do you reconcile those two things? I\u2019ve seen serious thinkers, and serious companies, articulating both sides so presumably one group isn\u2019t just outright lying. \n\nIs it that they\u2019re using different definitions of agent? Is it that you can get agents working if used in certain ways for certain classes of task?\n\nWould really love it if someone who has hands-on experience could help me square these seemingly diametrically opposed views. Thanks ",
+    "created_utc":1751911481.0,
+    "subreddit":"ArtificialInteligence",
+    "num_comments":39,
+    "score":7,
+    "sentiment":0.8295
+  },
+  {
+    "id":"1lngy9z",
+    "title":"AMA: Guardrails vs. leashes in regulating AI",
+    "text":"Hi Reddit!\n\nI\u2019m Cary Coglianese, one of the authors of a new article in the journal *Risk Analysis* on the value of what we call a \u201cleash\u201d strategy for regulating artificial intelligence. In this article, my coauthor, [Colton Crum](https:\/\/www.reddit.com\/user\/ColtonCrum\/), and I explain what a \u201cleash\u201d strategy is and why it is better-suited than a prescriptive \u201cguardrail\u201d approach due to AI\u2019s dynamic nature, allowing for technological discovery while mitigating risk and preventing AI from running away.\n\nWe aim for our paper to spark productive public, policy-relevant dialogue about ways of thinking about effective AI regulation. So, we\u2019re eager to discuss it.\n\n*What do you think? Should AI be regulated with \u201cguardrails\u201d or \u201cleashes\u201d?*\n\nWe\u2019ll be here to respond to an AMA running throughout the day on **Thursday, July 3**. Questions and comments can be posted before then, too.\n\nTo facilitate this AMA, the publisher of *Risk Analysis* is making our article, \u201cLeashes, Not Guardrails: A Management-Based Approach to Artificial Intelligence Risk Regulation,\u201d available to read at no charge through the end of this week. You can access the article here: [https:\/\/onlinelibrary.wiley.com\/doi\/epdf\/10.1111\/risa.70020?af=R](https:\/\/onlinelibrary.wiley.com\/doi\/epdf\/10.1111\/risa.70020?af=R)\u00a0\n\nA working paper version of the article will always be available for free download from: [https:\/\/papers.ssrn.com\/sol3\/papers.cfm?abstract\\_id=5137081](https:\/\/papers.ssrn.com\/sol3\/papers.cfm?abstract_id=5137081) \n\nThe publisher\u2019s press release about the *Risk Analysis* article is here: [https:\/\/www.sra.org\/2025\/05\/25\/the-future-of-ai-regulation-why-leashes-are-better-than-guardrails\/](https:\/\/www.sra.org\/2025\/05\/25\/the-future-of-ai-regulation-why-leashes-are-better-than-guardrails\/)\u00a0\n\nFor those who are interested in taking further the parallels between dog-walking rules and AI governance, we also have a brand new working paper entitled, \u201cOn Leashing (and Unleashing) AI Innovation.\u201d We\u2019re happy to talk about it, too. It\u2019s available via SSRN: [https:\/\/papers.ssrn.com\/sol3\/papers.cfm?abstract\\_id=5319728](https:\/\/papers.ssrn.com\/sol3\/papers.cfm?abstract_id=5319728)\n\nIn case it's helpful, my coauthor and I have listed our bios below.\u00a0\n\nLooking forward to your comments and questions.\n\nCary\n\n\n\n\\###\n\n[Cary Coglianese](https:\/\/nam02.safelinks.protection.outlook.com\/?url=https%3A%2F%2Fwww.carycoglianese.net%2F&data=05%7C02%7Ccary_coglianese%40law.upenn.edu%7C25a827868f2d43b4561208ddae8980a1%7C6cf568beb84a4e319df6359907586b27%7C0%7C0%7C638858627782575401%7CUnknown%7CTWFpbGZsb3d8eyJFbXB0eU1hcGkiOnRydWUsIlYiOiIwLjAuMDAwMCIsIlAiOiJXaW4zMiIsIkFOIjoiTWFpbCIsIldUIjoyfQ%3D%3D%7C0%7C%7C%7C&sdata=yHU%2B0QKQcuFxbmstDPGWHaupl7Xi34a2rCexBAl44tM%3D&reserved=0) is the Edward B. Shils Professor of Law, a Professor of Political Science, and Director of the Penn Program on Regulation at the University of Pennsylvania. Dr. Coglianese is a leading interdisciplinary scholar on the role of technology and business in government decision-making, most recently contributing to the conversation about artificial intelligence and its influence in law and public policy. He has authored numerous books and peer-reviewed articles on administrative law, AI, risk management, private governance, and more.\n\n[Colton R. Crum](https:\/\/nam02.safelinks.protection.outlook.com\/?url=https%3A%2F%2Fscholar.google.com%2Fcitations%3Fuser%3DbvI0--QAAAAJ%26hl%3Den&data=05%7C02%7Ccary_coglianese%40law.upenn.edu%7C25a827868f2d43b4561208ddae8980a1%7C6cf568beb84a4e319df6359907586b27%7C0%7C0%7C638858627782585765%7CUnknown%7CTWFpbGZsb3d8eyJFbXB0eU1hcGkiOnRydWUsIlYiOiIwLjAuMDAwMCIsIlAiOiJXaW4zMiIsIkFOIjoiTWFpbCIsIldUIjoyfQ%3D%3D%7C0%7C%7C%7C&sdata=oF8lLkW9xn8HJzCVXDbpRGBi0jvw9cVr7zqbilnW1WY%3D&reserved=0) is a Computer Science Doctoral Candidate at the University of Notre Dame. \u00a0His research interests and publications include computer vision, biometrics, human-AI teaming, explainability, and effective regulatory and governance strategies for AI and machine learning systems.",
+    "created_utc":1751209709.0,
+    "subreddit":"ArtificialInteligence",
+    "num_comments":38,
+    "score":9,
+    "sentiment":0.9832
+  },
+  {
+    "id":"1ljjfo1",
+    "title":"Teacher suspects I used AI. What can I do?",
+    "text":"I wrote my history paper with the help of AI (although I did the research myself and made an accurate bibliography). If my teacher suspects that Ai was used, he will do a colloquium. If he knows I cheated, he\u2019ll interrogate me tomorrow. What can I do to convince him I wrote the essay myself?\n\nI know that the whole situation is my fault. I\u2019ve learned my lesson. I don\u2019t need a moral lecture anymore.",
+    "created_utc":1750790860.0,
+    "subreddit":"ArtificialInteligence",
+    "num_comments":38,
+    "score":0,
+    "sentiment":-0.755
+  },
+  {
+    "id":"1m3n5fa",
+    "title":"I'm kind of disillusioned by the AI Industry",
+    "text":"Making the world a better place is not even an option right now lol\n\nRight now, a lot of AI Startups are mostly GPT wrappers and their success mostly depends on their idea.   \nBecause AI is this new hot shiny object that every investor wants your tech startup to have, otherwise you're kind of worthless. How is your startup worth something, if it can be replicated by the big tech giants who have all the compute? Unless you're doing B2B to help these big tech companies to scale and optimize their AI, your own AI focused product (meant to help people) is kind of worthless. Cluely might be an exception, but only because companies like Google, OpenAI wouldn't promote cheating as a legitimate product.   \n  \nIs the only way to grow in the AI space, to go against the norms and ethics? Look at Ani by Grok AI, other AI companies wouldn't dare to start doing such a thing until Elon decided we need virtual Waifus.   \nSo like should all AI startups attempt to do something that companies like Google, Meta be afraid of doing due to public backlash?\n\nIf you're trying to make the world a better place by yourself, should you consider your product vulnerable to being done better by another company that has all the compute power? ",
+    "created_utc":1752899038.0,
+    "subreddit":"ArtificialInteligence",
+    "num_comments":38,
+    "score":6,
+    "sentiment":0.9782
+  },
+  {
+    "id":"1lgikp3",
+    "title":"Are AI tools ruining the integrity of coding interviews?",
+    "text":"With tools like ChatGPT and Copilot available, it seems like more people are acing online technical screens but underperforming on-site or in real roles.\n\nIs this just a transition period in how we measure ability, or a real threat to fairness in hiring?",
+    "created_utc":1750462978.0,
+    "subreddit":"ArtificialInteligence",
+    "num_comments":37,
+    "score":4,
+    "sentiment":0.1306
+  },
+  {
+    "id":"1lmrsz0",
+    "title":"Why \u201cWe Can Detect AI\u201d Is Mostly Wishful Thinking",
+    "text":"No, we really can\u2019t detect it\u00a0*really*\n\nDetecting AI content is an adversarial process there will always be people trying to avoid detection. This means there\u2019s no foolproof solution. Some tools might work sometimes, but none will be completely reliable.\n\nThink about counterfeit banknotes or email spam. These problems seem easy to solve, but there are always some fake banknotes and spam emails slipping through. Whenever one loophole is closed, another opens. It\u2019s like a constant game of hide and seek.\n\nSure, AI writing sometimes has patterns, but so what? You can just tweak prompts with instructions like \u201cbe natural\u201d or \u201cuse everyday words\u201d to bypass detection.\n\nIn the end, writing is about expressing thoughts and feelings. Most of us don\u2019t worry about perfect grammar every day. But imagine you have a feeling to someone and want to express yourself, but don\u2019t know how. You might turn to AI for help and that\u2019s okay. But if the other person realizes it\u2019s AI-generated, it might change how they feel. Being yourself still matters.\n\nI don\u2019t want a future where the internet is full of meaningless bot posts and fake comments. That idea honestly makes me want to puke. Organic, human content will be a luxury someday.\n\nIn the professional world, writing needs more care. You have to focus on grammar, word choice, and clear logic. It takes time and energy. That\u2019s why people use AI it speeds things up.\n\nBut if you use AI to write a blog and it contains mistakes or misinformation, your boss won\u2019t blame AI. They\u2019ll blame you, because you\u2019re responsible. That\u2019s the risk. AI can help, but accountability still falls on you.\n\nEven if the content is accurate, if every company uses AI to write similar blogs, the web will flood with copycat articles. Everything will sound the same, and there will be no unique voices or real depth.\n\nPeople say, \u201cAI is just a tool,\u201d which is true. But the truth is, everyone\u2019s being pushed to use AI from schools to workplaces to creative industries. Whether we like it or not, AI-generated content will be everywhere soon. We can\u2019t stop it. It\u2019s already happening.\n\nHere\u2019s a small tip: I never use em dashes in my writing, but my friend loves them. He says, \u201cI use them for parenthetical thoughts\u2014like this.\u201d He also uses them freely just because he likes how they look. AI, on the other hand, almost always uses em dashes by the book, which can be a subtle clue you\u2019re reading AI generated text.\n\nAnother giveaway is the kind of language AI uses. Words like \u201cdelve,\u201d \u201cprofound,\u201d \u201ckeen insight,\u201d or phrases like \u201cserves as a catalyst\u201d pop up way too often. These aren\u2019t wrong, but when everything sounds too polished or formal, it\u2019s obvious. AI plays it safe and picks words that sound good, even if people don\u2019t actually talk like that.\n\nHere\u2019s a Reddit thread with more examples:\u00a0[https:\/\/www.reddit.com\/r\/SEO\/comments\/1bh5clu\/most\\_common\\_ai\\_words\\_and\\_phrases\/](https:\/\/www.reddit.com\/r\/SEO\/comments\/1bh5clu\/most_common_ai_words_and_phrases\/)\n\nAlso, AI tends to repeat certain phrases in student essays, like \u201cIt is important to note that\u2026\u201d or \u201cethical implications.\u201d These show up much more now than before. My guess is a lot of that content is created by ChatGPT, with students only lightly editing it. But the tone often doesn\u2019t match a typical 19-year-old\u2019s voice.\n\nAnother dead giveaway is lines like \u201cIt\u2019s not about X, it\u2019s about Y.\u201d This formula appears a lot in AI video scripts. For example, \u201cIt\u2019s not just learning, it\u2019s unlocking your potential.\u201d\n\nI got inspired to write this after watching this video:\u00a0[https:\/\/www.youtube.com\/watch?v=yb8CS-tLvLE](https:\/\/www.youtube.com\/watch?v=yb8CS-tLvLE)\n\nOur knowledge is based on personal experience, so we often use self-referential phrases like \u201cI\u2019m starting to see,\u201d \u201cI ended up,\u201d or \u201cpatterns I notice.\u201d\n\nThanks for reading. I know some of this sounds critical. I\u2019ve read many opinions while writing this, and I admit I used AI to help with parts of it too.\n\nI\u2019m not here to hate or love AI. It\u2019s complicated, and my feelings are mixed. But one thing\u2019s for sure: I\u2019ll keep using it. It\u2019s powerful, helpful, and here to stay.",
+    "created_utc":1751130265.0,
+    "subreddit":"ArtificialInteligence",
+    "num_comments":37,
+    "score":59,
+    "sentiment":0.9981
+  },
+  {
+    "id":"1lve17m",
+    "title":"In an idealistic world, how would you like the future of AI to play out \u2014 Best Case Scenario",
+    "text":"Often with new tech or anything new from the old, people complain. People moan about adapting until they're forced to then they accept. It's a cycle we're all familiar with.\n\nHypothetically speaking, in 10 years time, how would like to utilizing AI (or not) to live an optimal life.\n\nFor me, taking into consideration capitalism, billionaires etc. \u2014 AI can help set us free. In an idealistic scenario, I see us all working independently but cooperatively - help me if there's already a name for this - but for example, we each have multiple agents working for us, bringing in multiple sources of income.",
+    "created_utc":1752051947.0,
+    "subreddit":"ArtificialInteligence",
+    "num_comments":37,
+    "score":2,
+    "sentiment":0.928
+  },
+  {
+    "id":"1lh3b8i",
+    "title":"What's your opinion about writing books with the help of AI?",
+    "text":"Before you go feral with this (and rightfully so), let  me explain. I don't mean writing a short prompt and the ai creating an entire novel, what I mean is writing all the story yourself, but getting help when it comes to describing places\/movements\/features. And still I mean, making the effort to write the descriptions yourself, but then enhancing the vocabulary and adding some sentences with ai. Would a book written like this get flagged as ai?\n\n\nAs someone whose English isn't my first language, despite having proficiency and been reading english books for years now, I really struggle with a more complex vocabulary, especially with the \"show and don't tell\". Obviously, I don't recommend this for indefinite use, but until I get to the point where I can comfortably write whatever is on my mind and not sound like an 8th grader. \n\n\n\n So yeah what's your opinion about this?",
+    "created_utc":1750530458.0,
+    "subreddit":"ArtificialInteligence",
+    "num_comments":36,
+    "score":0,
+    "sentiment":0.889
+  },
+  {
+    "id":"1lv2qlk",
+    "title":"Why are the non-techies so scared of AI while it literally exists to help them",
+    "text":"A friend of mine  MBA guy, fancy consulting job  recently texted me in total panic about AI replacing his job\n\nAnd I had to cut him off.\n\nI told him:\n\n\u201cDude, AI\u2019s not some monster under your bed. It\u2019s just a tool. You\u2019ve gotta learn how to use it instead of fearing it.\u201d\n\nBecause if a generalist like me  with no tech background  can figure this stuff out, so can he.\n\nHere\u2019s what I told him to do instead of panicking:\n\nMix up your skills: Don\u2019t stick to just one tool. Learn how things like Zapier, ChatGPT, Notion, and Airtable connect and work together. That\u2019s where the real magic happens.\n\n Experiment daily: Use AI for small wins  emails, brainstorming ideas, writing meeting notes. Save your brainpower for creative problem-solving.\n\n Stay curious: Try tools like Midjourney, RunwayML, Claude. The more you play around, the less intimidating it all feels.\n\n Build proof: Don\u2019t just read about AI  build something tiny. Even small projects speak louder than a bunch of certificates.\n\nSo yeah don\u2019t wait around worrying about getting replaced.\n\nFigure out how to make AI work for you.",
+    "created_utc":1752014733.0,
+    "subreddit":"ArtificialInteligence",
+    "num_comments":36,
+    "score":0,
+    "sentiment":0.7785
+  }
+]

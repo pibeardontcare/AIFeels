@@ -10,6 +10,17 @@ scene.background = new THREE.Color(0xEAECC9); // Beige
 const camera = new THREE.PerspectiveCamera(75, window.innerWidth/window.innerHeight, 0.1, 1000);
 camera.position.z = 200;
 
+const light = new THREE.AmbientLight(0xffffff, 2.2); // soft white light
+scene.add(light);
+
+const ambientLight = new THREE.AmbientLight(0xffffff, 0.8); // soft white
+scene.add(ambientLight);
+
+const directionalLight = new THREE.DirectionalLight(0xffffff, 0.5);
+directionalLight.position.set(1, 1, 1).normalize();
+scene.add(directionalLight);
+
+
 const renderer = new THREE.WebGLRenderer({ antialias: true });
 renderer.setSize(window.innerWidth, window.innerHeight);
 document.body.appendChild(renderer.domElement);
@@ -21,35 +32,95 @@ window.addEventListener('click', onClick, false);
 
 scene.background = new THREE.Color(0x284E71);
 
-fetch('./reddit_ai_sentiment.json')
-  .then(res => res.json())
-  .then(data => {
-    data.forEach((post, i) => {
-      const color = post.sentiment > 0.2 ? 0xA5D48F :
-                    post.sentiment < -0.2 ? 0xCA5770 : 0xEAECC9;
 
-      const geometry = new THREE.SphereGeometry(1.5, 8, 8);
-      const material = new THREE.MeshBasicMaterial({ color });
-      const sphere = new THREE.Mesh(geometry, material);
+const subreddits = [
+  "chatgpt",
+  "artificialinteligence",
+  "futurology",
+  "jobs",
+  "digitalmarketing",
+  "sports"
+];
 
-      sphere.position.x = Math.sin(i) * 50;
-      sphere.position.y = post.sentiment * 50;
-      sphere.position.z = (i - data.length / 2) * 2;
+const activeSubs = new Set(subreddits);
+const allData = {};
 
-      // Attach post metadata
-      sphere.userData = {
-        text: post.text,
-        date: post.created_utc
-          ? new Date(post.created_utc * 1000).toISOString().split('T')[0]
-          : 'Date not available',
-        sentiment: post.sentiment
-      };
+Promise.all(
+  subreddits.map(sub =>
+    fetch(`./data/${sub}.json`)
+      .then(res => res.json())
+      .then(json => {
+        allData[sub] = json;
+      })
+  )
+).then(() => {
+  setupToggleUI();
+  renderScene();
+  animate(); // 👈 start animation once data is ready
+});
 
-      scene.add(sphere);
+
+
+
+function setupToggleUI() {
+  document.querySelectorAll('.toggle').forEach(button => {
+    button.addEventListener('click', () => {
+
+        
+      const sub = button.dataset.sub;
+      if (activeSubs.has(sub)) {
+        activeSubs.delete(sub);
+        button.classList.remove('active');
+      } else {
+        activeSubs.add(sub);
+        button.classList.add('active');
+      }
+      renderScene();
+    });
+  });
+}
+
+function renderScene() {
+  // Remove all previously added spheres (but keep lights/camera/etc.)
+  scene.children = scene.children.filter(obj => !obj.userData.text);
+
+  const combined = [...activeSubs]
+    .flatMap(sub => allData[sub] || [])
+    .sort((a, b) => b.num_comments - a.num_comments)
+    .slice(0, 300);
+
+  combined.forEach((post, i) => {
+    const color = post.sentiment > 0.2 ? 0xA5D48F :
+                  post.sentiment < -0.2 ? 0xCA5770 : 0xEAECC9;
+
+    const geometry = new THREE.SphereGeometry(1.5, 8, 8);
+   const material = new THREE.MeshStandardMaterial({
+        color,
+        emissive: 0x000000, // no glow by default
+        emissiveIntensity: 1,
+        roughness: 0.6,
+        metalness: 0.2
     });
 
-    animate();
+    const sphere = new THREE.Mesh(geometry, material);
+
+    sphere.position.x = Math.sin(i) * 50;
+    sphere.position.y = post.sentiment * 50;
+    sphere.position.z = (i - combined.length / 2) * 2;
+
+    sphere.userData = {
+      text: post.text,
+      date: post.created_utc
+        ? new Date(post.created_utc * 1000).toISOString().split('T')[0]
+        : 'Date not available',
+      sentiment: post.sentiment
+    };
+
+    scene.add(sphere);
   });
+
+  renderer.render(scene, camera);
+}
 
 
 function animate() {
@@ -58,19 +129,6 @@ function animate() {
   renderer.render(scene, camera);
 }
 
-function formatDate(dateString) {
-  const d = new Date(dateString);
-  return isNaN(d) ? dateString : d.toLocaleDateString(undefined, {
-    year: 'numeric', month: 'short', day: 'numeric'
-  });
-}
-
-
-function getSentimentLabel(value) {
-  if (value > 0.2) return '😊 Positive';
-  if (value < -0.2) return '😠 Negative';
-  return '😐 Neutral';
-}
 
 
 window.addEventListener("resize", () => {
@@ -101,19 +159,148 @@ if (intersects.length > 0) {
  }
 
 
+//  function showTooltip(x, y, data) {
+//   const tooltip = document.getElementById('tooltip');
+//   const localDate = new Date(data.date).toLocaleString();
+  
+//   let sentimentLabel = 'Neutral';
+//   if (data.sentiment > 0.2) sentimentLabel = 'Positive';
+//   else if (data.sentiment < -0.2) sentimentLabel = 'Negative';
 
- function showTooltip(x, y, data) {
-   const tooltip = document.getElementById('tooltip');
-   const localDate = new Date(data.date).toLocaleString();
-     let sentimentLabel = 'Neutral';
-   if (data.sentiment > 0.2) sentimentLabel = 'Positive';
-   else if (data.sentiment < -0.2) sentimentLabel = 'Negative';
-   tooltip.innerHTML = `
-     <strong>${sentimentLabel}</strong><br/>
-     <em>${localDate}</em><br/>
-     ${data.text}
-   `;
-   tooltip.style.left = x + 15 + 'px';
-   tooltip.style.top = y + 15 + 'px';
-   tooltip.style.display = 'block';
+//   tooltip.innerHTML = `
+//     <strong>${sentimentLabel}</strong><br/>
+//     <em>${localDate}</em><br/>
+//     ${data.text}
+//   `;
+  
+//   // Show it briefly to measure its size
+//   tooltip.style.display = 'block';
+//   tooltip.style.left = '0px';
+//   tooltip.style.top = '0px';
+  
+//   const tooltipRect = tooltip.getBoundingClientRect();
+//   const padding = 20;
+
+//   let left = x + 15;
+//   let top = y + 15;
+
+//   if (left + tooltipRect.width > window.innerWidth - padding) {
+//     left = window.innerWidth - tooltipRect.width - padding;
+//   }
+
+//   if (top + tooltipRect.height > window.innerHeight - padding) {
+//     top = window.innerHeight - tooltipRect.height - padding;
+//   }
+
+//   tooltip.style.left = `${left}px`;
+//   tooltip.style.top = `${top}px`;
+// }
+
+function showTooltip(x, y, data) {
+  const tooltip = document.getElementById('tooltip');
+  const localDate = new Date(data.date).toLocaleString();
+
+  let sentimentLabel = 'Neutral';
+  let sentimentColor = '#EAECC9';
+  if (data.sentiment > 0.2) {
+    sentimentLabel = 'Positive';
+    sentimentColor = '#A5D48F';
+  } else if (data.sentiment < -0.2) {
+    sentimentLabel = 'Negative';
+    sentimentColor = '#CA5770';
+  }
+
+  tooltip.innerHTML = `
+    <div style="font-weight: bold; color: ${sentimentColor}; margin-bottom: 4px;">${sentimentLabel}</div>
+    <div style="font-size: 12px; color: #ccc; margin-bottom: 8px;"><em>${localDate}</em></div>
+    <div>${data.text}</div>
+  `;
+
+  // Apply display & dynamic position
+  tooltip.style.display = 'block';
+  tooltip.style.left = '0px';
+  tooltip.style.top = '0px';
+
+  const tooltipRect = tooltip.getBoundingClientRect();
+  const padding = 20;
+
+  let left = x + 15;
+  let top = y + 15;
+
+  if (left + tooltipRect.width > window.innerWidth - padding) {
+    left = window.innerWidth - tooltipRect.width - padding;
+  }
+
+  if (top + tooltipRect.height > window.innerHeight - padding) {
+    top = window.innerHeight - tooltipRect.height - padding;
+  }
+
+  tooltip.style.left = `${left}px`;
+  tooltip.style.top = `${top}px`;
 }
+
+
+let lastHovered = null;
+
+// window.addEventListener('mousemove', (event) => {
+//   mouse.x = (event.clientX / window.innerWidth) * 2 - 1;
+//   mouse.y = -(event.clientY / window.innerHeight) * 2 + 1;
+
+//   raycaster.setFromCamera(mouse, camera);
+//   const intersects = raycaster.intersectObjects(scene.children);
+
+//   // Reset previous
+//   if (lastHovered && lastHovered.scale) {
+//     lastHovered.scale.set(1, 1, 1);
+//   }
+
+//   if (intersects.length > 0) {
+//     const hovered = intersects[0].object;
+//     hovered.scale.set(1.5, 1.5, 1.5); // Grow slightly
+//     lastHovered = hovered;
+//   } else {
+//     lastHovered = null;
+//   }
+
+//   if (lastHovered) {
+//   lastHovered.scale.set(1, 1, 1);
+//   lastHovered.material.emissive.setHex(0x000000); // reset glow
+// }
+
+// if (intersects.length > 0) {
+//   const hovered = intersects[0].object;
+//   hovered.scale.set(1.5, 1.5, 1.5);
+//   hovered.material.emissive.setHex(0xffffff); // white glow
+//   lastHovered = hovered;
+// } else {
+//   lastHovered = null;
+// }
+
+// });
+window.addEventListener('mousemove', (event) => {
+  mouse.x = (event.clientX / window.innerWidth) * 2 - 1;
+  mouse.y = -(event.clientY / window.innerHeight) * 2 + 1;
+
+  raycaster.setFromCamera(mouse, camera);
+  const intersects = raycaster.intersectObjects(scene.children);
+
+  // Reset previous hovered object
+  if (lastHovered) {
+    lastHovered.scale.set(1, 1, 1);
+    if (lastHovered.material?.emissive) {
+      lastHovered.material.emissive.setHex(0x000000);
+    }
+  }
+
+  // Apply hover effect to the new object
+  if (intersects.length > 0) {
+    const hovered = intersects[0].object;
+    hovered.scale.set(1.5, 1.5, 1.5);
+    if (hovered.material?.emissive) {
+      hovered.material.emissive.setHex(0xffffff); // glow white
+    }
+    lastHovered = hovered;
+  } else {
+    lastHovered = null;
+  }
+});

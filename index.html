@@ -3,43 +3,34 @@
 <head>
   <meta charset="UTF-8" />
   <title>Reddit AI Sentiment</title>
-  <link rel="stylesheet" href="/src/style.css" />
+  <link rel="stylesheet" href="/style.css" />
 </head>
 
 <body>
 
+
   <!-- Tooltip -->
-  <div id="tooltip" style="
-    position: absolute;
-    pointer-events: none;
-    background: purple;
-    color: white;
-    padding: 20px;
-    font-size: 30px;
-    border-radius: 10px;
-    display: none;
-    z-index: 10;
-    max-width: 80vw;
-    line-height: 1.4;
-    font-family: sans-serif;
-    word-wrap: break-word;
-  "></div>
+   <!-- Tooltip -->
+<div id="tooltip"></div>
 
   <!-- Legend -->
-  <div id="legend" style="
-    position: absolute;
-    top: 160px;
-    left: 20px;
-    color: white;
-    background: rgba(0,0,0,0.7);
-    padding: 10px;
-    font-family: sans-serif;
-  ">
-    <strong>Sentiment Legend</strong><br/>
-    <span style="color:#00ff00">🟢 Positive</span><br/>
-    <span style="color:#ffffff">⚪ Neutral</span><br/>
-    <span style="color:#ff0000">🔴 Negative</span>
-  </div>
+<div id="legend">
+  <strong>Sentiment Legend</strong><br />
+  <div><span class="legend-dot" style="background:#A5D48F;"></span> Positive</div>
+  <div><span class="legend-dot" style="background:#EAECC9;"></span> Neutral</div>
+  <div><span class="legend-dot" style="background:#CA5770;"></span> Negative</div>
+</div>
+
+
+<div id="controls">
+  <button data-sub="chatgpt" class="toggle active">r/ChatGPT</button>
+  <button data-sub="artificialinteligence" class="toggle active">r/ArtificialInteligence</button>
+  <button data-sub="futurology" class="toggle active">r/Futurology</button>
+  <button data-sub="jobs" class="toggle active">r/Jobs</button>
+  <button data-sub="digitalmarketing" class="toggle active">r/DigitalMarketing</button>
+  <button data-sub="sports" class="toggle active">r/Sports</button>
+</div>
+
 
   <!-- Your JS (loaded via Vite as a module) -->
   <script type="module" src="/src/main.js"></script>
