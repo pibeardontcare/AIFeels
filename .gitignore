@@ -1,6 +1,15 @@
 node_modules/
+<<<<<<< HEAD
 .DS_Store
 vite-project/
 dist/
 .env
 
+=======
+dist/
+.vite/
+.DS_Store
+.env
+*.local
+.ipynb_checkpoints/
+>>>>>>> 4903691 (Initial clean commit)
