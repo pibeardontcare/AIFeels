@@ -11,7 +11,7 @@
 
   <!-- Tooltip -->
    <!-- Tooltip -->
-<div id="tooltip"></div>
+
 
   <!-- Legend -->
 <div id="legend">
@@ -28,9 +28,13 @@
   <button data-sub="futurology" class="toggle active">r/Futurology</button>
   <button data-sub="jobs" class="toggle active">r/Jobs</button>
   <button data-sub="digitalmarketing" class="toggle active">r/DigitalMarketing</button>
-  <button data-sub="sports" class="toggle active">r/Sports</button>
+
 </div>
 
+<div id="tooltip" style="display: none; position: fixed; bottom: 20px; right: 20px; background: rgba(0,0,0,0.85); color: white; padding: 20px; border-radius: 10px; max-width: 300px;">
+  <button id="tooltip-close" style="position: absolute; top: 5px; right: 5px;">×</button>
+  <div id="tooltip-content"></div>
+</div>
 
   <!-- Your JS (loaded via Vite as a module) -->
   <script type="module" src="/src/main.js"></script>
