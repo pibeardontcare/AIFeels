@@ -47,10 +47,19 @@ Promise.all(
 ).then(() => {
   setupToggleUI();
   renderScene();
+const isMobile = window.innerWidth < 768;
+
+if (isMobile) {
+  camera.position.set(0, 0, 300);        // Pull the camera back more
+  controls.target.set(0, 0, -50);        // Focus slightly deeper
+} else {
+  camera.position.set(0, 0, 150);        // Your original setting
+  controls.target.set(0, 0, -30);
+}
 
 
-  camera.position.set(0, 0, 150); // Adjusted for better framing
-controls.target.set(0, 0, -30); // Focus deeper into the scene
+//   camera.position.set(0, 0, 150); // Adjusted for better framing
+// controls.target.set(0, 0, -30); // Focus deeper into the scene
   controls.update();
   animate();
 });
@@ -73,8 +82,13 @@ function setupToggleUI() {
 
 function renderScene() {
     points = [];
+// Remove all non-light children (preserve lights and camera)
+scene.children = scene.children.filter(obj =>
+  obj.type === 'AmbientLight' ||
+  obj.type === 'DirectionalLight'
+);
 
-  scene.children = scene.children.filter(obj => !obj.userData.text && !obj.userData.isLabel && !obj.userData.isBox);
+//   scene.children = scene.children.filter(obj => !obj.userData.text && !obj.userData.isLabel && !obj.userData.isBox);
   const spacing = 50;
   const subX = {};
   subreddits.forEach((sub, idx) => {
@@ -148,8 +162,11 @@ floor.userData.boundingBox = box;
 function addSubredditLabels(subX) {
   subreddits.forEach(sub => {
     const label = makeTextSprite(`r/${sub}`);
-    label.position.set(subX[sub], 70, 10); // moved up from 35 to 60
-    label.scale.set(40, 10, 1); // scaled 3x from 40x10
+   
+    label.position.set(subX[sub], -45, 20); // Just above floor, in front of cluster
+label.scale.set(40, 10, 1);               // Adjust size as needed
+label.rotation.y = Math.PI / 2;         // Rotate to face sideways (perpendicular to floor plane)
+
     label.userData = { isLabel: true };
     scene.add(label);
   });
@@ -281,3 +298,14 @@ function showTooltip(data) {
   `;
   tooltip.style.display = 'block';
 }
+
+
+
+
+const chevron = document.getElementById('chevron-toggle');
+const sidebar = document.getElementById('sidebar');
+
+chevron.addEventListener('click', () => {
+  sidebar.classList.toggle('closed');
+  chevron.innerHTML = sidebar.classList.contains('closed') ? '&rsaquo;' : '&lsaquo;';
+});

@@ -9,35 +9,86 @@
 <body>
 
 
-  <!-- Tooltip -->
    <!-- Tooltip -->
 
 
-  <!-- Legend -->
-<div id="legend">
-  <strong>Sentiment Legend</strong><br />
-  <div><span class="legend-dot" style="background:#A5D48F;"></span> Positive</div>
-  <div><span class="legend-dot" style="background:#EAECC9;"></span> Neutral</div>
-  <div><span class="legend-dot" style="background:#CA5770;"></span> Negative</div>
+
+
+<div id="tooltip" style="
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background: rgba(0,0,0,0.85);
+  color: white;
+  padding: 20px;
+  border-radius: 10px;
+  max-width: 300px;
+  max-height: 70vh;
+  overflow: hidden;
+  font-family: sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  z-index: 1000;
+">
+  <button id="tooltip-close" style="
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    background: none;
+    border: none;
+    color: white;
+    font-size: 20px;
+    cursor: pointer;
+  ">×</button>
+  
+  <div id="tooltip-content" style="
+    overflow-y: auto;
+    max-height: 60vh;
+    padding-right: 8px;
+  "></div>
 </div>
 
 
-<div id="controls">
-  <button data-sub="chatgpt" class="toggle active">r/ChatGPT</button>
-  <button data-sub="artificialinteligence" class="toggle active">r/ArtificialInteligence</button>
-  <button data-sub="futurology" class="toggle active">r/Futurology</button>
-  <button data-sub="jobs" class="toggle active">r/Jobs</button>
-  <button data-sub="digitalmarketing" class="toggle active">r/DigitalMarketing</button>
 
+
+<div id="sidebar" class="open">
+  <button id="chevron-toggle" class="chevron">&lsaquo;</button> <!-- ‹ when open -->
+
+  <div id="sidebar-content">
+     <h3>Select Subreddits</h3>
+    <div class="toggle-buttons">
+      <button class="toggle active" data-sub="chatgpt">r/chatgpt</button>
+      <button class="toggle active" data-sub="artificialintelligence">r/artificialintelligence</button>
+      <button class="toggle active" data-sub="futurology">r/Futurology</button>
+      <button class="toggle active" data-sub="jobs">r/Jobs</button>
+      <button class="toggle active" data-sub="digitalmarketing">r/DigitalMarketing</button>
+    </div>
+
+    <div class="info-panel">
+      <h3>How to Read This</h3>
+      <ul>
+        <li>Each point represents a Reddit post.</li>
+        <li>Points are colored by sentiment: green (positive), yellow (neutral), red (negative).</li>
+        <li>Hover over a point to see the post text and sentiment score.</li>
+        <li>Click a point to open the post in Reddit.</li>
+        <li>Use the buttons to toggle visibility of each subreddit.</li>
+      </ul>
+      <h4>Colors</h4>
+      <ul>
+        <li><span style="color:#A5D48F">Green</span> = Positive</li>
+        <li><span style="color:#EAECC9">Yellow</span> = Neutral</li>
+        <li><span style="color:#CA5770">Red</span> = Negative</li>
+      </ul>
+    </div>
+  </div>
 </div>
 
-<div id="tooltip" style="display: none; position: fixed; bottom: 20px; right: 20px; background: rgba(0,0,0,0.85); color: white; padding: 20px; border-radius: 10px; max-width: 300px;">
-  <button id="tooltip-close" style="position: absolute; top: 5px; right: 5px;">×</button>
-  <div id="tooltip-content"></div>
-</div>
 
   <!-- Your JS (loaded via Vite as a module) -->
   <script type="module" src="/src/main.js"></script>
 
 </body>
 </html>
+
+

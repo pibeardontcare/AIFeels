@@ -1,3 +1,4 @@
+/* === GENERAL UI STYLES === */
 #controls {
   position: absolute;
   top: 20px;
@@ -6,18 +7,50 @@
   padding: 10px;
   z-index: 100;
   border-radius: 10px;
+  font-family: sans-serif;
 }
-.toggle {
-  margin: 5px;
-  padding: 6px 12px;
-  cursor: pointer;
-  background: #eee;
+
+/* === TOOLTIPS & LEGEND === */
+#tooltip {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  pointer-events: auto; /* so users can scroll and click close */
+  z-index: 1001;
+  display: none;
+  background: #1a1a1a;
+  color: white;
+  padding: 20px;
+  border-radius: 10px;
+  font-size: 1rem;
+  max-width: 90vw;
+  max-height: 70vh;
+  font-family: sans-serif;
+  line-height: 1.5;
+  box-shadow: 0 0 12px rgba(0, 0, 0, 0.6);
+  overflow: hidden; /* limit entire box */
+}
+
+#tooltip .content {
+  overflow-y: auto;
+  max-height: 55vh;
+  padding-right: 8px;
+}
+
+/* Close button in tooltip */
+#tooltip .close-btn {
+  position: absolute;
+  top: 6px;
+  right: 10px;
+  background: none;
   border: none;
-  border-radius: 6px;
+  color: white;
+  font-size: 18px;
+  cursor: pointer;
 }
-.toggle.active {
-  background: #90c090;
-}
+
+
 #legend {
   position: fixed;
   bottom: 20px;
@@ -26,8 +59,8 @@
   color: white;
   padding: 12px;
   border-radius: 10px;
-  font-family: sans-serif;
   font-size: 14px;
+  font-family: sans-serif;
   z-index: 100;
 }
 
@@ -45,39 +78,81 @@
   margin-right: 8px;
   vertical-align: middle;
 }
-#tooltip {
-  position: fixed;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  pointer-events: none;
-  z-index: 10;
-  display: none;
-  background: #1a1a1a;
-  color: white;
-  padding: 20px;
-  border-radius: 10px;
-  font-size: 18px;
+
+/* === SIDEBAR PANEL === */
+#sidebar {
+  position: absolute;
+  top: 100px;
+  left: 0;
+  width: 320px;
   max-width: 80vw;
+  background: rgba(0, 0, 0, 0.9);
+  color: white;
+  padding: 10px;
   font-family: sans-serif;
-  line-height: 1.5;
+  font-size: 1rem;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.3s ease;
+  z-index: 1000;
 }
 
-/* Base toggle button style */
+#sidebar.closed {
+  transform: translateX(-90%);
+}
+
+#chevron-toggle {
+  background: rgba(0,0,0,0.7);
+  border: none;
+  color: white;
+  font-size: 24px;
+  cursor: pointer;
+  padding: 4px 8px;
+  position: absolute;
+  right: -24px;
+  top: 10px;
+  border-radius: 0 5px 5px 0;
+}
+
+/* === SIDEBAR CONTENT === */
+.toggle-buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-bottom: 20px;
+}
+
 .toggle {
   font-size: 16px;
   padding: 12px 18px;
-  margin: 6px;
-  border-radius: 8px;
-  background: #ffffff22;
+  border-radius: 6px;
+  background: #222;
   color: white;
-  border: none;
+  border: 1px solid #555;
   cursor: pointer;
   font-family: sans-serif;
-  display: inline-block;
+  white-space: nowrap;
 }
 
-/* Responsive scaling for mobile */
+.toggle.active {
+  background: #aaa;
+  color: black;
+}
+
+/* === INFO PANEL INSIDE SIDEBAR === */
+.info-panel ul {
+  padding-left: 18px;
+  margin: 0 0 1em;
+}
+
+.info-panel h3,
+.info-panel h4 {
+  margin: 10px 0 4px;
+}
+
+/* === RESPONSIVE STYLES === */
 @media (max-width: 768px) {
   .toggle {
     font-size: 20px;
@@ -85,5 +160,24 @@
     width: 100%;
     display: block;
     margin: 10px 0;
+  }
+
+  #tooltip {
+    font-size: 1.2rem !important;
+    padding: 1.2rem !important;
+    max-width: 90vw !important;
+  }
+
+  #legend {
+    font-size: 1rem !important;
+    padding: 1rem !important;
+  }
+
+  #sidebar {
+    width: 90vw;
+  }
+
+  button {
+    font-size: 1rem;
   }
 }
