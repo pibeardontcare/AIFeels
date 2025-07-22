@@ -49,42 +49,49 @@
   "></div>
 </div>
 
+<div>
+
+<div id="sidebar">
+  <div id="sidebar-inner">
 
 
+  <div class="toggle-buttons">
+    <button class="toggle active" data-sub="chatgpt">r/ChatGPT</button>
+    <button class="toggle active" data-sub="artificialinteligence">r/ArtificialInteligence</button>
+    <button class="toggle active" data-sub="futurology">r/Futurology</button>
+    <button class="toggle active" data-sub="jobs">r/Jobs</button>
+    <button class="toggle active" data-sub="digitalmarketing">r/DigitalMarketing</button>
+  </div>
 
-<div id="sidebar" class="open">
-  <button id="chevron-toggle" class="chevron">&lsaquo;</button> <!-- ‹ when open -->
 
-  <div id="sidebar-content">
-     <h3>Select Subreddits</h3>
-    <div class="toggle-buttons">
-      <button class="toggle active" data-sub="chatgpt">r/chatgpt</button>
-      <button class="toggle active" data-sub="artificialinteligence">r/ArtificialInteligence</button>
+<div class="info-wrapper">
+  <div class="how-to">
+    <h3>How to Read This</h3>
+    <ul>
+      <li>Each point represents a Reddit post.</li>
+      <li>Points are colored by sentiment: green (positive), yellow (neutral), red (negative).</li>
+      <li>Hover over a point to see the post text and sentiment score.</li>
+      <li>Click a point to open the post in Reddit.</li>
+      <li>Use the buttons to toggle visibility of each subreddit.</li>
+    </ul>
+  </div>
 
-      <button class="toggle active" data-sub="futurology">r/Futurology</button>
-      <button class="toggle active" data-sub="jobs">r/Jobs</button>
-      <button class="toggle active" data-sub="digitalmarketing">r/DigitalMarketing</button>
-    </div>
-
-    <div class="info-panel">
-      <h3>How to Read This</h3>
-      <ul>
-        <li>Each point represents a Reddit post.</li>
-        <li>Points are colored by sentiment: green (positive), yellow (neutral), red (negative).</li>
-        <li>Hover over a point to see the post text and sentiment score.</li>
-        <li>Click a point to open the post in Reddit.</li>
-        <li>Use the buttons to toggle visibility of each subreddit.</li>
-      </ul>
-      <h4>Colors</h4>
-      <ul>
-        <li><span style="color:#A5D48F">Green</span> = Positive</li>
-        <li><span style="color:#EAECC9">Yellow</span> = Neutral</li>
-        <li><span style="color:#CA5770">Red</span> = Negative</li>
-      </ul>
-    </div>
+  <div class="colors">
+    <h4>Colors</h4>
+    <ul>
+      <li><span style="color:#A5D48F">Green</span> = Positive</li>
+      <li><span style="color:#EAECC9">Yellow</span> = Neutral</li>
+      <li><span style="color:#CA5770">Red</span> = Negative</li>
+    </ul>
   </div>
 </div>
 
+<button id="chevron-toggle">&darr;</button>
+  </div>
+</div>
+
+
+</div>
 
   <!-- Your JS (loaded via Vite as a module) -->
   <script type="module" src="/src/main.js"></script>

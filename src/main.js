@@ -81,6 +81,8 @@ function setupToggleUI() {
   });
 }
 
+
+
 function renderScene() {
 
 points = [];
@@ -325,3 +327,9 @@ chevron.addEventListener('click', () => {
   sidebar.classList.toggle('closed');
   chevron.innerHTML = sidebar.classList.contains('closed') ? '&rsaquo;' : '&lsaquo;';
 });
+
+
+// toggleBtn.addEventListener('click', () => {
+//   sidebar.classList.toggle('closed');
+//   toggleBtn.innerHTML = sidebar.classList.contains('closed') ? '&darr;' : '&uarr;';
+// });
