@@ -136,7 +136,7 @@
   background: #CA5770;
   color: white;
   border: 1px solid #555;
-  cursor: pointer;
+ 
   font-family: sans-serif;
   white-space: nowrap;
   transition: background 0.3s;
@@ -149,19 +149,39 @@
 
 
 /* === CHEVRON === */
+/* === CHEVRON === */
 #chevron-toggle {
-  background: rgba(0, 0, 0, 0.7);
+  background: #A5D48F; /* Green when open */
   border: none;
-  color: white;
-  font-size: 24px;
+  color: black;
+  font-size: 18px;
+  content: '>';
   cursor: pointer;
   padding: 6px 12px;
-  border-radius: 5px;
+  border-radius: 6px;
   z-index: 1001;
   position: absolute;
   right: 20px;
   bottom: 10px;
+  font-family: sans-serif;
+  transition: background 0.3s, color 0.3s;
 }
+
+/* Red styling when sidebar is closed */
+#chevron-toggle.closed {
+  background: #CA5770;
+  color: white;
+}
+
+/* Chevron symbol: > when closed, < when open */
+#chevron-toggle::before {
+  content: '<'; /* default is open */
+}
+
+#chevron-toggle.closed::before {
+  content: '>';
+}
+
 
 /* === RESPONSIVE STYLES === */
 @media (max-width: 768px) {

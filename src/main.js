@@ -325,7 +325,7 @@ const sidebar = document.getElementById('sidebar');
 
 chevron.addEventListener('click', () => {
   sidebar.classList.toggle('closed');
-  chevron.innerHTML = sidebar.classList.contains('closed') ? '&rsaquo;' : '&lsaquo;';
+  chevron.classList.toggle('closed'); // Toggle the .closed style for color and symbol
 });
 
 
