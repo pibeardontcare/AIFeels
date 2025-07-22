@@ -1,3 +1,12 @@
+body, html {
+  width: 100%;
+  overflow-x: hidden;
+}
+
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
 /* === GENERAL UI STYLES === */
 #controls {
   position: absolute;
@@ -64,7 +73,7 @@
   top: 0;
   left: 0;
   width: 100vw;
-  background: rgba(0, 0, 0, 0.95);
+  background: rgba(0, 0, 0, 0.5);
   color: white;
   padding: 10px 20px 40px;
   font-family: sans-serif;
@@ -151,9 +160,9 @@
 /* === CHEVRON === */
 /* === CHEVRON === */
 #chevron-toggle {
-  background: #A5D48F; /* Green when open */
+  background: #4b505c; /* Green when open */
   border: none;
-  color: black;
+  color: rgb(255, 255, 255);
   font-size: 18px;
   content: '>';
   cursor: pointer;
@@ -167,6 +176,9 @@
   transition: background 0.3s, color 0.3s;
 }
 
+
+
+
 /* Red styling when sidebar is closed */
 #chevron-toggle.closed {
   background: #CA5770;
@@ -175,8 +187,11 @@
 
 /* Chevron symbol: > when closed, < when open */
 #chevron-toggle::before {
-  content: '<'; /* default is open */
+  content: attr(data-icon);
+  font-size: 20px;
+  line-height: 1;
 }
+
 
 #chevron-toggle.closed::before {
   content: '>';

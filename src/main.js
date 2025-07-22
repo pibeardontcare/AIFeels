@@ -31,9 +31,26 @@ controls.enableDamping = true;
 window.addEventListener('click', onClick, false);
 window.addEventListener('mousemove', onMouseMove, false);
 
-window.addEventListener('touchstart', (e) => {
-  if (e.touches.length > 0) onClick(e.touches[0]);
-}, false);
+// window.addEventListener('touchstart', (e) => {
+//   if (e.touches.length > 0) onClick(e.touches[0]);
+// }, false);
+
+
+renderer.domElement.addEventListener('touchstart', (event) => {
+  event.preventDefault();
+  const touch = event.touches[0];
+  const rect = renderer.domElement.getBoundingClientRect();
+
+  mouse.x = ((touch.clientX - rect.left) / rect.width) * 2 - 1;
+  mouse.y = -((touch.clientY - rect.top) / rect.height) * 2 + 1;
+
+  raycaster.setFromCamera(mouse, camera);
+  const intersects = raycaster.intersectObjects(scene.children, true);
+
+  if (intersects.length > 0) {
+    onSphereTap(intersects[0].object);
+  }
+});
 
 const subreddits = ["chatgpt", "artificialinteligence", "futurology", "jobs", "digitalmarketing"];
 const activeSubs = new Set(subreddits);
@@ -318,18 +335,36 @@ function showTooltip(data) {
 }
 
 
-
-
 const chevron = document.getElementById('chevron-toggle');
 const sidebar = document.getElementById('sidebar');
 
 chevron.addEventListener('click', () => {
   sidebar.classList.toggle('closed');
-  chevron.classList.toggle('closed'); // Toggle the .closed style for color and symbol
+  chevron.setAttribute('data-icon', sidebar.classList.contains('closed') ? '›' : '‹');
 });
 
 
-// toggleBtn.addEventListener('click', () => {
+// const chevron = document.getElementById('chevron-toggle');
+// const sidebar = document.getElementById('sidebar');
+
+// chevron.addEventListener('click', () => {
 //   sidebar.classList.toggle('closed');
-//   toggleBtn.innerHTML = sidebar.classList.contains('closed') ? '&darr;' : '&uarr;';
+//   chevron.classList.toggle('closed'); // Toggle the .closed style for color and symbol
 // });
+
+
+let lastTappedSphere = null;
+
+function onSphereTap(intersectedObject) {
+  if (lastTappedSphere !== intersectedObject) {
+    if (lastTappedSphere) {
+      lastTappedSphere.scale.set(1, 1, 1); // reset previous
+    }
+    intersectedObject.scale.set(1.5, 1.5, 1.5); // enlarge on first tap
+    lastTappedSphere = intersectedObject;
+  } else {
+    window.open(intersectedObject.userData.redditUrl, '_blank');
+    lastTappedSphere.scale.set(1, 1, 1);
+    lastTappedSphere = null;
+  }
+}
