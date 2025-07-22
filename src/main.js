@@ -1,5 +1,6 @@
 
 let points = [];
+let floorMeshes = []; 
 
 
 import * as THREE from 'three';
@@ -81,12 +82,29 @@ function setupToggleUI() {
 }
 
 function renderScene() {
-    points = [];
-// Remove all non-light children (preserve lights and camera)
-scene.children = scene.children.filter(obj =>
-  obj.type === 'AmbientLight' ||
-  obj.type === 'DirectionalLight'
-);
+
+points = [];
+floorMeshes = [];
+
+const toRemove = [];
+
+scene.children.forEach(obj => {
+  const isPost = obj.name && obj.name.startsWith('post-');
+  const isFloor = obj.name && obj.name.startsWith('floor-');
+  const isLabel = obj.name && obj.name.startsWith('label-');
+  const isTagged = obj.userData && (obj.userData.text || obj.userData.isLabel || obj.userData.isBox);
+
+  if (isPost || isFloor || isLabel || isTagged) {
+    toRemove.push(obj);
+  }
+});
+
+toRemove.forEach(obj => {
+  scene.remove(obj);
+  if (obj.geometry) obj.geometry.dispose();
+  if (obj.material) obj.material.dispose();
+});
+
 
 //   scene.children = scene.children.filter(obj => !obj.userData.text && !obj.userData.isLabel && !obj.userData.isBox);
   const spacing = 50;
@@ -107,6 +125,10 @@ scene.children = scene.children.filter(obj =>
       const geometry = new THREE.SphereGeometry(1.5, 8, 8);
       const material = new THREE.MeshStandardMaterial({ color, emissive: 0x000000, roughness: 0.6, metalness: 0.2 });
       const sphere = new THREE.Mesh(geometry, material);
+      sphere.name = `post-${sub}`;
+      console.log(`Created sphere: ${sphere.name}`);
+
+
 
       const xOffset = i % 10 * 4; // num_comments slice across x-axis
       const yOffset = post.sentiment * 50; // sentiment
@@ -138,6 +160,10 @@ scene.children = scene.children.filter(obj =>
 
     const floorMat = new THREE.MeshBasicMaterial({ color: 0xffffff, opacity: 0.05, transparent: true, side: THREE.DoubleSide });
     const floor = new THREE.Mesh(floorGeo, floorMat);
+    floor.name = `floor-${sub}`;
+    console.log(`Created floor: ${floor.name}`);
+
+
     floor.rotation.x = -Math.PI / 2;
     const floorY = -60; // or whatever base level you prefer
    const uniformZ = -0; // or whatever Z depth looks good
@@ -152,8 +178,12 @@ floor.userData.boundingBox = box;
 
     floor.userData = { isBox: true };
     scene.add(floor);
+   floorMeshes.push(floor); // ✅ Add this line
+
 
     group.children.forEach(obj => scene.add(obj));
+    console.log(`Finished rendering ${sorted.length} posts for: ${sub}`);
+
   });
 
   addSubredditLabels(subX);
@@ -162,10 +192,11 @@ floor.userData.boundingBox = box;
 function addSubredditLabels(subX) {
   subreddits.forEach(sub => {
     const label = makeTextSprite(`r/${sub}`);
-   
+   label.name = `label-${sub}`;
+
     label.position.set(subX[sub], -45, 20); // Just above floor, in front of cluster
-label.scale.set(40, 10, 1);               // Adjust size as needed
-label.rotation.y = Math.PI / 2;         // Rotate to face sideways (perpendicular to floor plane)
+    label.scale.set(40, 10, 1);               // Adjust size as needed
+    label.rotation.y = Math.PI / 2;         // Rotate to face sideways (perpendicular to floor plane)
 
     label.userData = { isLabel: true };
     scene.add(label);
@@ -232,32 +263,14 @@ function onClick(event) {
 
 let activeFloor = null;
 
-// function onMouseMove(event) {
-//   // existing mouse update code ...
-//   raycaster.setFromCamera(mouse, camera);
-//   const intersects = raycaster.intersectObjects(points);
-
-//   if (intersects.length > 0) {
-//     const intersected = intersects[0].object;
-//     intersected.scale.set(1.5, 1.5, 1.5);
-//     intersected.material.emissive.setHex(0xffd700); // gold glow
-//   }
-
-//   activeFloor = null;
-//   for (const floor of floorMeshes) {
-//     const box = floor.userData.boundingBox;
-//     const worldMouse = raycaster.ray.origin.clone().add(raycaster.ray.direction.clone().multiplyScalar(100));
-//     if (box.containsPoint(worldMouse)) {
-//       activeFloor = floor;
-//     }
-//   }
-// }
 function onMouseMove(event) {
   mouse.x = (event.clientX / window.innerWidth) * 2 - 1;
   mouse.y = -(event.clientY / window.innerHeight) * 2 + 1;
 
   raycaster.setFromCamera(mouse, camera);
 
+
+  
   // Reset all points to default
   points.forEach(p => {
     p.scale.set(1, 1, 1);
@@ -275,11 +288,14 @@ function onMouseMove(event) {
   // Floor glow logic
   activeFloor = null;
   for (const floor of floorMeshes) {
-    const box = floor.userData.boundingBox;
-    const worldMouse = raycaster.ray.origin.clone().add(raycaster.ray.direction.clone().multiplyScalar(100));
-    if (box.containsPoint(worldMouse)) {
-      activeFloor = floor;
-    }
+ const box = floor.userData?.boundingBox;
+if (box) {
+  const worldMouse = raycaster.ray.origin.clone().add(raycaster.ray.direction.clone().multiplyScalar(100));
+  if (box.containsPoint(worldMouse)) {
+    activeFloor = floor;
+  }
+}
+
   }
 }
 
