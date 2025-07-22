@@ -36,21 +36,21 @@ window.addEventListener('mousemove', onMouseMove, false);
 // }, false);
 
 
-renderer.domElement.addEventListener('touchstart', (event) => {
-  event.preventDefault();
-  const touch = event.touches[0];
-  const rect = renderer.domElement.getBoundingClientRect();
+// renderer.domElement.addEventListener('touchstart', (event) => {
+//   event.preventDefault();
+//   const touch = event.touches[0];
+//   const rect = renderer.domElement.getBoundingClientRect();
 
-  mouse.x = ((touch.clientX - rect.left) / rect.width) * 2 - 1;
-  mouse.y = -((touch.clientY - rect.top) / rect.height) * 2 + 1;
+//   mouse.x = ((touch.clientX - rect.left) / rect.width) * 2 - 1;
+//   mouse.y = -((touch.clientY - rect.top) / rect.height) * 2 + 1;
 
-  raycaster.setFromCamera(mouse, camera);
-  const intersects = raycaster.intersectObjects(scene.children, true);
+//   raycaster.setFromCamera(mouse, camera);
+//   const intersects = raycaster.intersectObjects(scene.children, true);
 
-  if (intersects.length > 0) {
-    onSphereTap(intersects[0].object);
-  }
-});
+//   if (intersects.length > 0) {
+//     onSphereTap(intersects[0].object);
+//   }
+// });
 
 const subreddits = ["chatgpt", "artificialinteligence", "futurology", "jobs", "digitalmarketing"];
 const activeSubs = new Set(subreddits);
@@ -269,9 +269,22 @@ function onClick(event) {
 
   const hoverTargets = scene.children.filter(obj => !(obj instanceof THREE.Sprite));
   const intersects = raycaster.intersectObjects(hoverTargets);
+
+  // Reset all points' glow and size
+  points.forEach(p => {
+    p.scale.set(1, 1, 1);
+    p.material.emissive.setHex(0x000000);
+  });
+
   if (intersects.length > 0) {
     const obj = intersects[0].object;
+
     if (obj.userData.text) {
+      // Add glow + scale effect
+      obj.scale.set(3, 3, 3);
+      obj.material.emissive.setHex(0xffd700);
+
+      // Show tooltip
       showTooltip(obj.userData);
     }
   } else {
@@ -300,7 +313,7 @@ function onMouseMove(event) {
 
   if (intersects.length > 0) {
     const hovered = intersects[0].object;
-    hovered.scale.set(1.5, 1.5, 1.5);
+    hovered.scale.set(2.5, 2.5, 2.5);
     hovered.material.emissive.setHex(0xffd700); // gold glow
   }
 
@@ -344,27 +357,21 @@ chevron.addEventListener('click', () => {
 });
 
 
-// const chevron = document.getElementById('chevron-toggle');
-// const sidebar = document.getElementById('sidebar');
-
-// chevron.addEventListener('click', () => {
-//   sidebar.classList.toggle('closed');
-//   chevron.classList.toggle('closed'); // Toggle the .closed style for color and symbol
-// });
 
 
-let lastTappedSphere = null;
 
-function onSphereTap(intersectedObject) {
-  if (lastTappedSphere !== intersectedObject) {
-    if (lastTappedSphere) {
-      lastTappedSphere.scale.set(1, 1, 1); // reset previous
-    }
-    intersectedObject.scale.set(1.5, 1.5, 1.5); // enlarge on first tap
-    lastTappedSphere = intersectedObject;
-  } else {
-    window.open(intersectedObject.userData.redditUrl, '_blank');
-    lastTappedSphere.scale.set(1, 1, 1);
-    lastTappedSphere = null;
-  }
-}
+// let lastTappedSphere = null;
+
+// function onSphereTap(intersectedObject) {
+//   if (lastTappedSphere !== intersectedObject) {
+//     if (lastTappedSphere) {
+//       lastTappedSphere.scale.set(1, 1, 1); // reset previous
+//     }
+//     intersectedObject.scale.set(1.5, 1.5, 1.5); // enlarge on first tap
+//     lastTappedSphere = intersectedObject;
+//   } else {
+//     window.open(intersectedObject.userData.redditUrl, '_blank');
+//     lastTappedSphere.scale.set(1, 1, 1);
+//     lastTappedSphere = null;
+//   }
+// }
