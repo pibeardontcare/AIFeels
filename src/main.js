@@ -331,6 +331,38 @@ if (box) {
   }
 }
 
+window.addEventListener('touchstart', function (event) {
+  if (event.touches.length > 0) {
+    const touch = event.touches[0];
+    const rect = renderer.domElement.getBoundingClientRect();
+
+    mouse.x = ((touch.clientX - rect.left) / rect.width) * 2 - 1;
+    mouse.y = -((touch.clientY - rect.top) / rect.height) * 2 + 1;
+
+    raycaster.setFromCamera(mouse, camera);
+
+    const hoverTargets = scene.children.filter(obj => !(obj instanceof THREE.Sprite));
+    const intersects = raycaster.intersectObjects(hoverTargets);
+
+    points.forEach(p => {
+      p.scale.set(1, 1, 1);
+      p.material.emissive.setHex(0x000000);
+    });
+
+    if (intersects.length > 0) {
+      const obj = intersects[0].object;
+      if (obj.userData.text) {
+        obj.scale.set(3, 3, 3);
+        obj.material.emissive.setHex(0xffd700);
+        showTooltip(obj.userData);
+      }
+    } else {
+      document.getElementById('tooltip').style.display = 'none';
+    }
+  }
+}, { passive: true });
+
+
 function showTooltip(data) {
   const tooltip = document.getElementById('tooltip');
   const localDate = new Date(data.date).toLocaleString();
@@ -356,22 +388,3 @@ chevron.addEventListener('click', () => {
   chevron.setAttribute('data-icon', sidebar.classList.contains('closed') ? '›' : '‹');
 });
 
-
-
-
-
-// let lastTappedSphere = null;
-
-// function onSphereTap(intersectedObject) {
-//   if (lastTappedSphere !== intersectedObject) {
-//     if (lastTappedSphere) {
-//       lastTappedSphere.scale.set(1, 1, 1); // reset previous
-//     }
-//     intersectedObject.scale.set(1.5, 1.5, 1.5); // enlarge on first tap
-//     lastTappedSphere = intersectedObject;
-//   } else {
-//     window.open(intersectedObject.userData.redditUrl, '_blank');
-//     lastTappedSphere.scale.set(1, 1, 1);
-//     lastTappedSphere = null;
-//   }
-// }
